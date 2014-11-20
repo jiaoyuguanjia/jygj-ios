@@ -16,7 +16,7 @@
 #define SCREEN_WIDTH  MAIN_SCREEN.size.width
 #define SCREEN_HEIGHT  MAIN_SCREEN.size.height
 
-#define WY_GREEN RGB(43, 187, 70)
-#define WY_CGRectMake(x, y, width, height) CGRectMake(x/2.0, y/2.0, width/3.0, height/2.0)
+#define WY_GREEN RGB(41, 177, 54)
+#define WY_CGRectMake(x, y, width, height) CGRectMake(x/2.0, y/2.0, width/2.0, height/2.0)
 
 #endif
