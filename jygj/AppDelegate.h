@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HomeVC.h"
+#import "EntranceVC.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

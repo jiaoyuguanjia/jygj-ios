@@ -20,7 +20,7 @@
 
 @end
 
-@interface HomeView : UIView
+@interface EntranceView : UIView
 
 @property(nonatomic,assign) id<HomeViewDelegate> homeViewDelegate;
 

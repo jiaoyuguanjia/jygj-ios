@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "HomeView.h"
+#import "EntranceView.h"
 #import "SingleColorBtn.h"
 
-@implementation HomeView
+@implementation EntranceView
 
 - (id)initWithFrame:(CGRect)frame{
-    HomeView *view = [super initWithFrame:frame];
+    EntranceView *view = [super initWithFrame:frame];
     
     
     UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 0, 504, view.height)];
@@ -31,10 +31,10 @@
     [mainView addSubview:label];
     
     
-    SingleColorBtn *stuSignBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 352, 482, 76) color:[UIColor whiteColor] bgColor:RGB(248, 127, 32) text:@"我是学生"];
+    SingleColorBtn *stuSignBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 352, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是学生"];
     [mainView addSubview:stuSignBtn];
     
-    SingleColorBtn *teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) color:[UIColor whiteColor] bgColor:RGB(248, 127, 32) text:@"我是老师"];
+    SingleColorBtn *teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是老师"];
     [mainView addSubview:teacherBtn];
     
     
@@ -46,7 +46,7 @@
     
     
     
-    SingleColorBtn *loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(248, 127, 32) text:@"立即登录"];
+    SingleColorBtn *loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
     [mainView addSubview:loginBtn];
     
     UILabel *enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-88, 200, 32)];
