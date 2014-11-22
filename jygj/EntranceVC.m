@@ -6,17 +6,17 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "EntranceVC.h"
 
-@interface ViewController ()
+@interface EntranceVC ()
 
 @end
 
-@implementation ViewController
+@implementation EntranceVC
 
 -(void)loadView{
     [super loadView];
-    HomeView *view = [[HomeView alloc]initWithFrame:FULL_SCREEN];
+    EntranceView *view = [[EntranceView alloc]initWithFrame:FULL_SCREEN];
     [self.view addSubview:view];
 }
 

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HomeView.h"
+#import "EntranceView.h"
 
-@interface ViewController : UIViewController
+@interface EntranceVC : UIViewController
 
 
 
