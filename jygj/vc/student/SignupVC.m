@@ -6,21 +6,22 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "StuSignupVC.h"
-#import "StuSignupVIew.h"
+#import "SignupVC.h"
+#import "SignupVIew.h"
 
-@interface StuSignupVC ()
+@interface SignupVC ()
 
 @end
 
-@implementation StuSignupVC
+@implementation SignupVC
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Student signup vc loaded...");
-    StuSignupVIew *signupView = [[StuSignupVIew alloc] initWithFrame:FULL_SCREEN];
+    SignupVIew *signupView = [[SignupVIew alloc] initWithFrame:FULL_SCREEN];
     [self.view addSubview:signupView];
+    [self setTitleBarColorGreen];
 }
 
 -(void)viewDidAppear:(BOOL)animated{

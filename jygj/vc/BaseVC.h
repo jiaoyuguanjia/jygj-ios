@@ -10,4 +10,8 @@
 
 @interface BaseVC : UIViewController
 
+-(void)setTitleBarColorGreen;
+
+-(void)setTitleBarColorGrey;
+
 @end

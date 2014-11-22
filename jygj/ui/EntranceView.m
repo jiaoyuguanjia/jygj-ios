@@ -13,7 +13,7 @@
 
 - (id)initWithFrame:(CGRect)frame{
     EntranceView *view = [super initWithFrame:frame];
-    
+    [view setBackgroundColor:WY_GREEN];
     
     UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 0, 504, view.height)];
     

@@ -12,7 +12,7 @@
 
 - (id)initWithFrame:(CGRect)frame{
    UIView *view = [super initWithFrame:frame];
-   [view setBackgroundColor:WY_GREEN];
+   [view setBackgroundColor:[UIColor whiteColor]];
    
    return (id)view;
 }

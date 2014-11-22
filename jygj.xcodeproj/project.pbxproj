@@ -16,8 +16,8 @@
 		E244125C1A18CDBE00FA50AE /* EntranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244125B1A18CDBE00FA50AE /* EntranceView.m */; };
 		E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412651A18CF4C00FA50AE /* SingleColorBtn.m */; };
 		E24412691A18D91300FA50AE /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412681A18D91300FA50AE /* NormalLabel.m */; };
-		E29169581A206FA800C30CCA /* StuSignupVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169571A206FA800C30CCA /* StuSignupVIew.m */; };
-		E291695F1A20722100C30CCA /* StuSignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E291695E1A20722100C30CCA /* StuSignupVC.m */; };
+		E29169581A206FA800C30CCA /* SignupVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169571A206FA800C30CCA /* SignupVIew.m */; };
+		E291695F1A20722100C30CCA /* SignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E291695E1A20722100C30CCA /* SignupVC.m */; };
 		E29169621A20780100C30CCA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169611A20780100C30CCA /* BaseView.m */; };
 		E29169651A207B1400C30CCA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169641A207B1400C30CCA /* BaseVC.m */; };
 /* End PBXBuildFile section */
@@ -53,10 +53,10 @@
 		E24412651A18CF4C00FA50AE /* SingleColorBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleColorBtn.m; sourceTree = "<group>"; };
 		E24412671A18D91300FA50AE /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
 		E24412681A18D91300FA50AE /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
-		E29169561A206FA800C30CCA /* StuSignupVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuSignupVIew.h; sourceTree = "<group>"; };
-		E29169571A206FA800C30CCA /* StuSignupVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuSignupVIew.m; sourceTree = "<group>"; };
-		E291695D1A20722100C30CCA /* StuSignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuSignupVC.h; sourceTree = "<group>"; };
-		E291695E1A20722100C30CCA /* StuSignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuSignupVC.m; sourceTree = "<group>"; };
+		E29169561A206FA800C30CCA /* SignupVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupVIew.h; path = ../student/SignupVIew.h; sourceTree = "<group>"; };
+		E29169571A206FA800C30CCA /* SignupVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupVIew.m; path = ../student/SignupVIew.m; sourceTree = "<group>"; };
+		E291695D1A20722100C30CCA /* SignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupVC.h; path = student/SignupVC.h; sourceTree = "<group>"; };
+		E291695E1A20722100C30CCA /* SignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupVC.m; path = student/SignupVC.m; sourceTree = "<group>"; };
 		E29169601A20780100C30CCA /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		E29169611A20780100C30CCA /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		E29169631A207B1400C30CCA /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
@@ -154,10 +154,12 @@
 		E23A4CF61A2058A20018DC71 /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				E29169661A207BDD00C30CCA /* teacher */,
-				E291695C1A20722100C30CCA /* student */,
 				E29169631A207B1400C30CCA /* BaseVC.h */,
 				E29169641A207B1400C30CCA /* BaseVC.m */,
+				E291695D1A20722100C30CCA /* SignupVC.h */,
+				E291695E1A20722100C30CCA /* SignupVC.m */,
+				E291695C1A20722100C30CCA /* student */,
+				E29169661A207BDD00C30CCA /* teacher */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -182,6 +184,8 @@
 				E244125E1A18CE8900FA50AE /* table */,
 				E29169601A20780100C30CCA /* BaseView.h */,
 				E29169611A20780100C30CCA /* BaseView.m */,
+				E29169561A206FA800C30CCA /* SignupVIew.h */,
+				E29169571A206FA800C30CCA /* SignupVIew.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -189,8 +193,6 @@
 		E24412581A18CD9B00FA50AE /* student */ = {
 			isa = PBXGroup;
 			children = (
-				E29169561A206FA800C30CCA /* StuSignupVIew.h */,
-				E29169571A206FA800C30CCA /* StuSignupVIew.m */,
 			);
 			path = student;
 			sourceTree = "<group>";
@@ -230,8 +232,6 @@
 		E291695C1A20722100C30CCA /* student */ = {
 			isa = PBXGroup;
 			children = (
-				E291695D1A20722100C30CCA /* StuSignupVC.h */,
-				E291695E1A20722100C30CCA /* StuSignupVC.m */,
 			);
 			path = student;
 			sourceTree = "<group>";
@@ -349,8 +349,8 @@
 				E23A4CF41A2042C90018DC71 /* UIView+Properties.m in Sources */,
 				E24412691A18D91300FA50AE /* NormalLabel.m in Sources */,
 				E29169621A20780100C30CCA /* BaseView.m in Sources */,
-				E291695F1A20722100C30CCA /* StuSignupVC.m in Sources */,
-				E29169581A206FA800C30CCA /* StuSignupVIew.m in Sources */,
+				E291695F1A20722100C30CCA /* SignupVC.m in Sources */,
+				E29169581A206FA800C30CCA /* SignupVIew.m in Sources */,
 				E29169651A207B1400C30CCA /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
