@@ -49,6 +49,7 @@
 		E24412651A18CF4C00FA50AE /* SingleColorBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleColorBtn.m; sourceTree = "<group>"; };
 		E24412671A18D91300FA50AE /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
 		E24412681A18D91300FA50AE /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
+		F43EBA811A20691C003706BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		E21F004A1A176838006E9650 = {
 			isa = PBXGroup;
 			children = (
+				F43EBA811A20691C003706BB /* Foundation.framework */,
 				E21F00551A176838006E9650 /* jygj */,
 				E21F006F1A176838006E9650 /* jygjTests */,
 				E21F00541A176838006E9650 /* Products */,
