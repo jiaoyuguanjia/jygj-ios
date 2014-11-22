@@ -16,6 +16,8 @@
 		E244125C1A18CDBE00FA50AE /* EntranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244125B1A18CDBE00FA50AE /* EntranceView.m */; };
 		E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412651A18CF4C00FA50AE /* SingleColorBtn.m */; };
 		E24412691A18D91300FA50AE /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412681A18D91300FA50AE /* NormalLabel.m */; };
+		E29169581A206FA800C30CCA /* StuSignupVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169571A206FA800C30CCA /* StuSignupVIew.m */; };
+		E291695B1A20703700C30CCA /* StuSignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E291695A1A20703700C30CCA /* StuSignupVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		E24412651A18CF4C00FA50AE /* SingleColorBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleColorBtn.m; sourceTree = "<group>"; };
 		E24412671A18D91300FA50AE /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
 		E24412681A18D91300FA50AE /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
+		E29169561A206FA800C30CCA /* StuSignupVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuSignupVIew.h; sourceTree = "<group>"; };
+		E29169571A206FA800C30CCA /* StuSignupVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuSignupVIew.m; sourceTree = "<group>"; };
+		E29169591A20703700C30CCA /* StuSignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StuSignupVC.h; path = student/StuSignupVC.h; sourceTree = "<group>"; };
+		E291695A1A20703700C30CCA /* StuSignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StuSignupVC.m; path = student/StuSignupVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,8 @@
 		E23A4CF61A2058A20018DC71 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				E29169591A20703700C30CCA /* StuSignupVC.h */,
+				E291695A1A20703700C30CCA /* StuSignupVC.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -171,6 +179,8 @@
 		E24412581A18CD9B00FA50AE /* student */ = {
 			isa = PBXGroup;
 			children = (
+				E29169561A206FA800C30CCA /* StuSignupVIew.h */,
+				E29169571A206FA800C30CCA /* StuSignupVIew.m */,
 			);
 			path = student;
 			sourceTree = "<group>";
@@ -312,6 +322,8 @@
 				E21F00591A176838006E9650 /* main.m in Sources */,
 				E23A4CF41A2042C90018DC71 /* UIView+Properties.m in Sources */,
 				E24412691A18D91300FA50AE /* NormalLabel.m in Sources */,
+				E291695B1A20703700C30CCA /* StuSignupVC.m in Sources */,
+				E29169581A206FA800C30CCA /* StuSignupVIew.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

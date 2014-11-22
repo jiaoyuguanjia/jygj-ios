@@ -17,11 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     EntranceVC *controller = [[EntranceVC alloc] init];
-
-    self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
-    self.window.rootViewController = controller;
-    [self.window makeKeyAndVisible];
     
+    
+    self.window = [UIWindow new];
+    [self.window makeKeyAndVisible];
+    self.window.frame = [[UIScreen mainScreen] bounds];
+    self.window.rootViewController = controller;
     return YES;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "EntranceVC.h"
+#import "StuSignupVC.h"
 
 @interface EntranceVC () <HomeViewDelegate>
 
@@ -45,6 +46,9 @@
 
 - (void) signupStudent:(id)sender{
     NSLog(@"signupStudent");
+    StuSignupVC *stuVC = [[StuSignupVC alloc] init];
+    [self.navigationController pushViewController:stuVC animated:YES];
+    
 }
 
 - (void) signupTeacher:(id)sender{
