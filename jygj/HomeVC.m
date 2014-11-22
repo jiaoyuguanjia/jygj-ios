@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeVC.h"
 
-@interface ViewController ()
+@interface HomeVC ()
 
 @end
 
-@implementation ViewController
+@implementation HomeVC
 
 -(void)loadView{
     [super loadView];

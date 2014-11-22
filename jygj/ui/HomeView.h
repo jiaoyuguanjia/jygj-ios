@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HomeViewDelegate <NSObject>
+
+- (void) enterList:(id)sender;
+
+- (void) enterLogin:(id)sender;
+
+- (void) signupStudent:(id)sender;
+
+- (void) signupTeacher:(id)sender;
+
+@end
+
 @interface HomeView : UIView
+
+@property(nonatomic,assign) id<HomeViewDelegate> homeViewDelegate;
 
 @end

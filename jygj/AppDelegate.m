@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *controller = [[ViewController alloc] init];
+    HomeVC *controller = [[HomeVC alloc] init];
 
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
     self.window.rootViewController = controller;

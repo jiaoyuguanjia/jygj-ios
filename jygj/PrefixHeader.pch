@@ -13,10 +13,12 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define FULL_SCREEN [UIScreen mainScreen].bounds
-#define SCREEN_WIDTH  MAIN_SCREEN.size.width
-#define SCREEN_HEIGHT  MAIN_SCREEN.size.height
+#define SCREEN_WIDTH  FULL_SCREEN.size.width
+#define SCREEN_HEIGHT  FULL_SCREEN.size.height
 
 #define WY_GREEN RGB(41, 177, 54)
 #define WY_CGRectMake(x, y, width, height) CGRectMake(x/2.0, y/2.0, width/2.0, height/2.0)
+
+#import "UIView+Properties.h";
 
 #endif
