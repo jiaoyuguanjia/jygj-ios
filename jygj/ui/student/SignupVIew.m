@@ -6,10 +6,21 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "SignupVIew.h"
+#import "SignupView.h"
+#import "BaseTableView.h"
+#import "SignupTableVC.h"
 
-@implementation SignupVIew
+@implementation SignupView
 
-
+- (id)initWithFrame:(CGRect)frame{
+    SignupView *view = [super initWithFrame:frame];
+    [view setBackgroundColor:WY_GREY];
+    
+    SignupTableVC *signupTableVC = [[SignupTableVC alloc] init];
+    
+    
+    
+    return view;
+}
 
 @end

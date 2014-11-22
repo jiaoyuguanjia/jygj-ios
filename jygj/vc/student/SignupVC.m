@@ -7,7 +7,7 @@
 //
 
 #import "SignupVC.h"
-#import "SignupVIew.h"
+#import "SignupView.h"
 
 @interface SignupVC ()
 
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Student signup vc loaded...");
-    SignupVIew *signupView = [[SignupVIew alloc] initWithFrame:FULL_SCREEN];
+    SignupView *signupView = [[SignupView alloc] initWithFrame:FULL_SCREEN];
     [self.view addSubview:signupView];
     [self setTitleBarColorGreen];
 }
