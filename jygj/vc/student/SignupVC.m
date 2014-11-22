@@ -21,6 +21,7 @@
     NSLog(@"Student signup vc loaded...");
     SignupVIew *signupView = [[SignupVIew alloc] initWithFrame:FULL_SCREEN];
     [self.view addSubview:signupView];
+    
     [self setTitleBarColorGreen];
 }
 
