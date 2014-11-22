@@ -39,8 +39,8 @@
 		E21F00581A176838006E9650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E21F005A1A176838006E9650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E21F005B1A176838006E9650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E21F005D1A176838006E9650 /* EntranceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntranceVC.h; sourceTree = "<group>"; };
-		E21F005E1A176838006E9650 /* EntranceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntranceVC.m; sourceTree = "<group>"; };
+		E21F005D1A176838006E9650 /* EntranceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EntranceVC.h; path = ../EntranceVC.h; sourceTree = "<group>"; };
+		E21F005E1A176838006E9650 /* EntranceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EntranceVC.m; path = ../EntranceVC.m; sourceTree = "<group>"; };
 		E21F00631A176838006E9650 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E21F006C1A176838006E9650 /* jygjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jygjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21F00711A176838006E9650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,8 +53,8 @@
 		E24412651A18CF4C00FA50AE /* SingleColorBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleColorBtn.m; sourceTree = "<group>"; };
 		E24412671A18D91300FA50AE /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
 		E24412681A18D91300FA50AE /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
-		E29169561A206FA800C30CCA /* SignupVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupVIew.h; path = ../student/SignupVIew.h; sourceTree = "<group>"; };
-		E29169571A206FA800C30CCA /* SignupVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupVIew.m; path = ../student/SignupVIew.m; sourceTree = "<group>"; };
+		E29169561A206FA800C30CCA /* SignupVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupVIew.h; path = student/SignupVIew.h; sourceTree = "<group>"; };
+		E29169571A206FA800C30CCA /* SignupVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupVIew.m; path = student/SignupVIew.m; sourceTree = "<group>"; };
 		E291695D1A20722100C30CCA /* SignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupVC.h; path = student/SignupVC.h; sourceTree = "<group>"; };
 		E291695E1A20722100C30CCA /* SignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupVC.m; path = student/SignupVC.m; sourceTree = "<group>"; };
 		E29169601A20780100C30CCA /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
@@ -107,8 +107,6 @@
 				E24412561A18CD9B00FA50AE /* ui */,
 				E21F005A1A176838006E9650 /* AppDelegate.h */,
 				E21F005B1A176838006E9650 /* AppDelegate.m */,
-				E21F005D1A176838006E9650 /* EntranceVC.h */,
-				E21F005E1A176838006E9650 /* EntranceVC.m */,
 				E21F00631A176838006E9650 /* Images.xcassets */,
 				E21F00561A176838006E9650 /* Supporting Files */,
 			);
@@ -158,6 +156,8 @@
 				E29169641A207B1400C30CCA /* BaseVC.m */,
 				E291695D1A20722100C30CCA /* SignupVC.h */,
 				E291695E1A20722100C30CCA /* SignupVC.m */,
+				E21F005D1A176838006E9650 /* EntranceVC.h */,
+				E21F005E1A176838006E9650 /* EntranceVC.m */,
 				E291695C1A20722100C30CCA /* student */,
 				E29169661A207BDD00C30CCA /* teacher */,
 			);
@@ -172,6 +172,8 @@
 				E24412591A18CD9B00FA50AE /* teacher */,
 				E244125A1A18CDBE00FA50AE /* EntranceView.h */,
 				E244125B1A18CDBE00FA50AE /* EntranceView.m */,
+				E29169561A206FA800C30CCA /* SignupVIew.h */,
+				E29169571A206FA800C30CCA /* SignupVIew.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -184,8 +186,6 @@
 				E244125E1A18CE8900FA50AE /* table */,
 				E29169601A20780100C30CCA /* BaseView.h */,
 				E29169611A20780100C30CCA /* BaseView.m */,
-				E29169561A206FA800C30CCA /* SignupVIew.h */,
-				E29169571A206FA800C30CCA /* SignupVIew.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
