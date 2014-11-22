@@ -12,6 +12,8 @@
 
 -(SingleColorBtn *)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *) bgColor text:(NSString *)text{
     SingleColorBtn *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btn.layer setMasksToBounds:YES];
+    [btn.layer setCornerRadius:3.0];//设置矩形四个圆角半径
     [btn setFrame:frame];
     [btn setTitle:text forState:UIControlStateNormal];
     [btn setTitleColor:color forState:UIControlStateNormal];

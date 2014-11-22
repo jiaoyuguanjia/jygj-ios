@@ -15,7 +15,7 @@
     EntranceView *view = [super initWithFrame:frame];
     [view setBackgroundColor:WY_GREEN];
     
-    UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 0, 504, view.height)];
+    UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 40, 504, view.height)];
     
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:WY_CGRectMake(0, 62, 324, 160)];
@@ -52,7 +52,7 @@
     [mainView addSubview:loginBtn];
     [loginBtn addTarget:self action:@selector(clickLogin) forControlEvents:UIControlEventTouchUpInside];
     
-    UILabel *enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-88, 200, 32)];
+    UILabel *enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-108, 200, 32)];
     [enter setText:@"先随便看看>>"];
     [enter setFont:[UIFont systemFontOfSize:16]];
     [enter setTextColor:[UIColor whiteColor]];
