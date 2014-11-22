@@ -7,6 +7,7 @@
 //
 
 #import "StuSignupVC.h"
+#import "StuSignupVIew.h"
 
 @interface StuSignupVC ()
 
@@ -14,12 +15,16 @@
 
 @implementation StuSignupVC
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Student signup vc loaded...");
-    UIView *test = [[UIView alloc] initWithFrame:FULL_SCREEN];
-    [test setBackgroundColor:[UIColor yellowColor]];
-    [self.view addSubview:test];
+    StuSignupVIew *signupView = [[StuSignupVIew alloc] initWithFrame:FULL_SCREEN];
+    [self.view addSubview:signupView];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

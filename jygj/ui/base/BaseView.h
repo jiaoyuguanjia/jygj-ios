@@ -1,5 +1,5 @@
 //
-//  StuSignupVC.h
+//  BaseView.h
 //  jygj
 //
 //  Created by teacher.im on 14-11-22.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseVC.h"
 
-@interface StuSignupVC : BaseVC
+@interface BaseView : UIView
 
 @end

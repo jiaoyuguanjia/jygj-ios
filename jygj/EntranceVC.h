@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "EntranceView.h"
+#import "BaseVC.h"
 
-@interface EntranceVC : UIViewController
+@interface EntranceVC : BaseVC
 
 @property(nonatomic,strong) EntranceView *entranceView;
 

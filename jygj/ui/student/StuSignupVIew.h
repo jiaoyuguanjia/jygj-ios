@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseView.h"
 
-@interface StuSignupVIew : UIView
+@interface StuSignupVIew : BaseView
 
 @end

@@ -18,7 +18,6 @@
     UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 0, 504, view.height)];
     
     
-    [view setBackgroundColor:WY_GREEN];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:WY_CGRectMake(0, 62, 324, 160)];
     [imageView setImage:[UIImage imageNamed:@"img_wuya"]];
     

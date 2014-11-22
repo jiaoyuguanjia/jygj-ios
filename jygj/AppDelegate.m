@@ -16,13 +16,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    
     EntranceVC *controller = [[EntranceVC alloc] init];
     
     
     self.window = [UIWindow new];
     [self.window makeKeyAndVisible];
     self.window.frame = [[UIScreen mainScreen] bounds];
-    self.window.rootViewController = controller;
+    
+    [nav pushViewController:controller animated:NO];
+    nav.navigationBarHidden = YES;
+    
+    self.window.rootViewController = nav;
     return YES;
 }
 
