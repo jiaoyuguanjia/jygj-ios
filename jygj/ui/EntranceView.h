@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SingleColorBtn.h"
 
 @protocol HomeViewDelegate <NSObject>
 
@@ -23,5 +24,6 @@
 @interface EntranceView : UIView
 
 @property(nonatomic,assign) id<HomeViewDelegate> homeViewDelegate;
+@property(nonatomic,strong) SingleColorBtn *stuSignBtn;
 
 @end

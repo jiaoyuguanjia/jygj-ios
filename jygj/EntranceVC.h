@@ -11,7 +11,7 @@
 
 @interface EntranceVC : UIViewController
 
-
+@property(nonatomic,strong) EntranceView *entranceView;
 
 @end
 

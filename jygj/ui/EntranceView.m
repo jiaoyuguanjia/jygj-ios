@@ -31,11 +31,14 @@
     [mainView addSubview:label];
     
     
-    SingleColorBtn *stuSignBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 352, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是学生"];
-    [mainView addSubview:stuSignBtn];
+     self.stuSignBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 352, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是学生"];
+    [mainView addSubview:self.stuSignBtn];
+    [self.stuSignBtn addTarget:self action:@selector(clickStudent) forControlEvents:UIControlEventTouchUpInside];
+    
     
     SingleColorBtn *teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是老师"];
     [mainView addSubview:teacherBtn];
+    [teacherBtn addTarget:self action:@selector(clickTeacher) forControlEvents:UIControlEventTouchUpInside];
     
     
     UILabel *label2 = [[UILabel alloc] initWithFrame:WY_CGRectMake(10, 624, 300, 32)];
@@ -48,6 +51,7 @@
     
     SingleColorBtn *loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
     [mainView addSubview:loginBtn];
+    [loginBtn addTarget:self action:@selector(clickLogin) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel *enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-88, 200, 32)];
     [enter setText:@"先随便看看>>"];
@@ -55,10 +59,36 @@
     [enter setTextColor:[UIColor whiteColor]];
     [mainView addSubview:enter];
     
+    
     [view addSubview:mainView];
     
 
     return view;
+}
+
+
+- (void) clickEnter{
+    if([_homeViewDelegate respondsToSelector:@selector(enterList:)]){
+        [_homeViewDelegate enterList:self];
+    }
+}
+
+- (void) clickLogin{
+    if([_homeViewDelegate respondsToSelector:@selector(enterLogin:)]){
+        [_homeViewDelegate enterLogin:self];
+    }
+}
+
+- (void) clickStudent{
+    if([_homeViewDelegate respondsToSelector:@selector(signupStudent:)]){
+        [_homeViewDelegate signupStudent:self];
+    }
+}
+
+- (void) clickTeacher{
+    if([_homeViewDelegate respondsToSelector:@selector(signupTeacher:)]){
+        [_homeViewDelegate signupTeacher:self];
+    }
 }
 
 @end

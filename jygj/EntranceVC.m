@@ -8,7 +8,7 @@
 
 #import "EntranceVC.h"
 
-@interface EntranceVC ()
+@interface EntranceVC () <HomeViewDelegate>
 
 @end
 
@@ -16,8 +16,9 @@
 
 -(void)loadView{
     [super loadView];
-    EntranceView *view = [[EntranceView alloc]initWithFrame:FULL_SCREEN];
-    [self.view addSubview:view];
+    self.entranceView = [[EntranceView alloc]initWithFrame:FULL_SCREEN];
+    [self.entranceView setHomeViewDelegate:self];
+    [self.view addSubview:self.entranceView];
 }
 
 - (void)viewDidLoad {
@@ -28,5 +29,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
+#pragma delegate methods
+
+- (void) enterList:(id)sender{
+    NSLog(@"enterList");
+}
+
+- (void) enterLogin:(id)sender{
+    NSLog(@"enterLogin");
+}
+
+- (void) signupStudent:(id)sender{
+    NSLog(@"signupStudent");
+}
+
+- (void) signupTeacher:(id)sender{
+    NSLog(@"signupTeacher");
+}
+
 
 @end
