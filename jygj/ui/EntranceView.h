@@ -28,6 +28,6 @@
 @property(nonatomic,strong) SingleColorBtn *stuSignBtn;
 @property(nonatomic,strong) SingleColorBtn *teacherBtn;
 @property(nonatomic,strong) SingleColorBtn *loginBtn;
-@property(nonatomic,strong) UILabel *enter;
+@property(nonatomic,strong) UIButton *enterBtn;
 
 @end

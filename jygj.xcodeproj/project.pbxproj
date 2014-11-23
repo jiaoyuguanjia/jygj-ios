@@ -266,9 +266,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E21F00521A176838006E9650 /* jygj */ = {
+		E21F00521A176838006E9650 /* 无涯 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E21F00761A176838006E9650 /* Build configuration list for PBXNativeTarget "jygj" */;
+			buildConfigurationList = E21F00761A176838006E9650 /* Build configuration list for PBXNativeTarget "无涯" */;
 			buildPhases = (
 				E21F004F1A176838006E9650 /* Sources */,
 				E21F00501A176838006E9650 /* Frameworks */,
@@ -278,7 +278,7 @@
 			);
 			dependencies = (
 			);
-			name = jygj;
+			name = "无涯";
 			productName = jygj;
 			productReference = E21F00531A176838006E9650 /* jygj.app */;
 			productType = "com.apple.product-type.application";
@@ -332,7 +332,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E21F00521A176838006E9650 /* jygj */,
+				E21F00521A176838006E9650 /* 无涯 */,
 				E21F006B1A176838006E9650 /* jygjTests */,
 			);
 		};
@@ -392,7 +392,7 @@
 /* Begin PBXTargetDependency section */
 		E21F006E1A176838006E9650 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E21F00521A176838006E9650 /* jygj */;
+			target = E21F00521A176838006E9650 /* 无涯 */;
 			targetProxy = E21F006D1A176838006E9650 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E21F00761A176838006E9650 /* Build configuration list for PBXNativeTarget "jygj" */ = {
+		E21F00761A176838006E9650 /* Build configuration list for PBXNativeTarget "无涯" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E21F00771A176838006E9650 /* Debug */,
