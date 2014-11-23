@@ -8,6 +8,8 @@
 
 #import "EntranceVC.h"
 #import "SignupVC.h"
+#import "LoginVC.h"
+#import "TeacherListVC.h"
 
 @interface EntranceVC () <HomeViewDelegate>
 
@@ -42,23 +44,25 @@
 #pragma delegate methods
 
 - (void) enterList:(id)sender{
-    NSLog(@"enterList");
+    TeacherListVC *listVC = [[TeacherListVC alloc] init];
+    [self.navigationController pushViewController:listVC animated:YES];
 }
 
 - (void) enterLogin:(id)sender{
-    NSLog(@"enterLogin");
+    LoginVC *loginVC = [[LoginVC alloc]init];
+    [self.navigationController pushViewController:loginVC animated:YES];
 }
 
 - (void) signupStudent:(id)sender{
-    NSLog(@"signupStudent");
     SignupVC *stuVC = [[SignupVC alloc] init];
     [stuVC setTitle:@"学生注册"];
     [self.navigationController pushViewController:stuVC animated:YES];
-    
 }
 
 - (void) signupTeacher:(id)sender{
-    NSLog(@"signupTeacher");
+    SignupVC *stuVC = [[SignupVC alloc] init];
+    [stuVC setTitle:@"老师注册"];
+    [self.navigationController pushViewController:stuVC animated:YES];
 }
 
 

@@ -7,7 +7,8 @@
 //
 
 #import "SignupVC.h"
-#import "SignupView.h"
+#import "BaseView.h"
+#import "SignupTableView.h"
 
 @interface SignupVC ()
 
@@ -18,9 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Student signup vc loaded...");
-    SignupView *signupView = [[SignupView alloc] initWithFrame:FULL_SCREEN];
+    BaseView *signupView = [[BaseView alloc] initWithFrame:FULL_SCREEN];
+    
     [self.view addSubview:signupView];
+    
+    SignupTableView *tableView = [[SignupTableView alloc] initWithFrame:signupView.bounds];
+    
+    [signupView addSubview:tableView];
     
     [self setTitleBarColorGreen];
 }
@@ -33,15 +38,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

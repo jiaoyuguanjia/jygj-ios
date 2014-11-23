@@ -26,5 +26,8 @@
 
 @property(nonatomic,assign) id<HomeViewDelegate> homeViewDelegate;
 @property(nonatomic,strong) SingleColorBtn *stuSignBtn;
+@property(nonatomic,strong) SingleColorBtn *teacherBtn;
+@property(nonatomic,strong) SingleColorBtn *loginBtn;
+@property(nonatomic,strong) UILabel *enter;
 
 @end
