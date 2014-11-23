@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+Ext.h"
 
 @interface BaseVC : UIViewController
 
--(void)setTitleBarColorGreen;
-
--(void)setTitleBarColorGrey;
 
 @end

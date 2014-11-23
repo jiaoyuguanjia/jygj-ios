@@ -10,6 +10,7 @@
 		E21940001A218A0000ED3B90 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2193FFF1A218A0000ED3B90 /* LoginVC.m */; };
 		E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940021A218CFB00ED3B90 /* TeacherListVC.m */; };
 		E21940061A218D3F00ED3B90 /* SignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940051A218D3F00ED3B90 /* SignupVC.m */; };
+		E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */; };
 		E21F00591A176838006E9650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F00581A176838006E9650 /* main.m */; };
 		E21F005C1A176838006E9650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F005B1A176838006E9650 /* AppDelegate.m */; };
 		E21F005F1A176838006E9650 /* EntranceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F005E1A176838006E9650 /* EntranceVC.m */; };
@@ -44,6 +45,8 @@
 		E21940021A218CFB00ED3B90 /* TeacherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherListVC.m; sourceTree = "<group>"; };
 		E21940041A218D3F00ED3B90 /* SignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupVC.h; sourceTree = "<group>"; };
 		E21940051A218D3F00ED3B90 /* SignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupVC.m; sourceTree = "<group>"; };
+		E219400A1A21C8DD00ED3B90 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
+		E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
 		E21F00531A176838006E9650 /* jygj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jygj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21F00571A176838006E9650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21F00581A176838006E9650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 			children = (
 				E23A4CF21A2042C90018DC71 /* UIView+Properties.h */,
 				E23A4CF31A2042C90018DC71 /* UIView+Properties.m */,
+				E219400A1A21C8DD00ED3B90 /* UIViewController+Ext.h */,
+				E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */,
 			);
 			path = categories;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				E23A4CF41A2042C90018DC71 /* UIView+Properties.m in Sources */,
 				E24412691A18D91300FA50AE /* NormalLabel.m in Sources */,
 				E29169621A20780100C30CCA /* BaseView.m in Sources */,
+				E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */,
 				F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */,
 				F43EBA921A20959D003706BB /* BaseTableView.m in Sources */,
 				F4C119381A20E0B6001ACE22 /* SignupTableView.m in Sources */,

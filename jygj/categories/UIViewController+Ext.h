@@ -1,5 +1,5 @@
 //
-//  LoginVC.h
+//  UIViewController+Ext.h
 //  jygj
 //
 //  Created by teacher.im on 14-11-23.
@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseTableVC.h"
 
+@interface UIViewController (Ext)
 
-@interface LoginVC : BaseTableVC
+-(void)setTitleBarColorGreen;
+
+-(void)setTitleBarColorGrey;
 
 @end

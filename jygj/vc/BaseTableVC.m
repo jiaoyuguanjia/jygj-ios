@@ -14,5 +14,13 @@
 
 @implementation BaseTableVC
 
+- (void)loadView {
+    [super loadView];
+    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBar.translucent = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self setTitleBarColorGreen];
+}
+
 
 @end

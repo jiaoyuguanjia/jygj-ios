@@ -7,7 +7,6 @@
 //
 
 #import "LoginVC.h"
-#import "BaseView.h"
 
 @interface LoginVC ()
 
@@ -17,11 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    BaseView *baseView = [[BaseView alloc] initWithFrame:FULL_SCREEN];
-    [self.view addSubview:baseView];
-    
-    [self setTitleBarColorGreen];
-    [self setTitle:@"登录"];
+    self.title =@"登录";
 }
 
 @end
