@@ -10,6 +10,9 @@
 
 @interface SingleColorBtn : UIButton
 
--(SingleColorBtn *)initWithFrame:(CGRect)frame color:(UIColor *)color bgColor:(UIColor *) bgColor text:(NSString *)text;
+-(SingleColorBtn *)initWithFrame:(CGRect)frame textColor:(UIColor *)textColor bgColor:(UIColor *) bgColor text:(NSString *)text;
+
+-(SingleColorBtn *)initWithFrame:(CGRect)frame textColor:(UIColor *)textColor bgColor:(UIColor *) bgColor text:(NSString *)text
+                            font:(UIFont *) font radius:(float) radius;
 
 @end

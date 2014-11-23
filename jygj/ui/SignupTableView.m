@@ -61,7 +61,7 @@
             textField.borderStyle = UITextBorderStyleRoundedRect;
             textField.placeholder = @"请输入手机号";
             
-            SingleColorBtn *btn = [[SingleColorBtn alloc] initWithFrame:CGRectMake((SCREEN_WIDTH*5/7+5), 5,(SCREEN_WIDTH*2/7-10), 60) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"获取验证码"];
+            SingleColorBtn *btn = [[SingleColorBtn alloc] initWithFrame:CGRectMake((SCREEN_WIDTH*5/7+5), 5,(SCREEN_WIDTH*2/7-10), 60) textColor:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"获取验证码"];
             [btn.titleLabel setFont:[UIFont boldSystemFontOfSize:14]];
            
             [cell.contentView addSubview:textField];
