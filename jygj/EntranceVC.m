@@ -50,15 +50,15 @@
 }
 
 - (void) signupStudent:(id)sender{
-    NSLog(@"signupStudent");
     SignupVC *stuVC = [[SignupVC alloc] init];
     [stuVC setTitle:@"学生注册"];
     [self.navigationController pushViewController:stuVC animated:YES];
-    
 }
 
 - (void) signupTeacher:(id)sender{
-    NSLog(@"signupTeacher");
+    SignupVC *stuVC = [[SignupVC alloc] init];
+    [stuVC setTitle:@"老师注册"];
+    [self.navigationController pushViewController:stuVC animated:YES];
 }
 
 
