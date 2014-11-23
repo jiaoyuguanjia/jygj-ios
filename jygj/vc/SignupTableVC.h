@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseVC.h"
+#import "BaseTableVC.h"
 
-@interface SignupVC : BaseVC
+@interface SignupTableVC : BaseTableVC
 
 @end

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */; };
 		E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940021A218CFB00ED3B90 /* TeacherListVC.m */; };
-		E21940061A218D3F00ED3B90 /* SignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940051A218D3F00ED3B90 /* SignupVC.m */; };
+		E21940061A218D3F00ED3B90 /* SignupTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940051A218D3F00ED3B90 /* SignupTableVC.m */; };
 		E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */; };
 		E21940161A220BF400ED3B90 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940151A220BF400ED3B90 /* BaseTextField.m */; };
 		E21940191A221BAB00ED3B90 /* ErrorMsgLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940181A221BAB00ED3B90 /* ErrorMsgLabel.m */; };
@@ -24,8 +24,6 @@
 		E29169621A20780100C30CCA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169611A20780100C30CCA /* BaseView.m */; };
 		E29169651A207B1400C30CCA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169641A207B1400C30CCA /* BaseVC.m */; };
 		F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F43EBA8E1A209530003706BB /* BaseTableVC.m */; };
-		F43EBA921A20959D003706BB /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43EBA911A20959D003706BB /* BaseTableView.m */; };
-		F4C119381A20E0B6001ACE22 /* SignupTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C119371A20E0B6001ACE22 /* SignupTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +42,15 @@
 		E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
 		E21940011A218CFB00ED3B90 /* TeacherListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherListVC.h; sourceTree = "<group>"; };
 		E21940021A218CFB00ED3B90 /* TeacherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherListVC.m; sourceTree = "<group>"; };
-		E21940041A218D3F00ED3B90 /* SignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupVC.h; sourceTree = "<group>"; };
-		E21940051A218D3F00ED3B90 /* SignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupVC.m; sourceTree = "<group>"; };
+		E21940041A218D3F00ED3B90 /* SignupTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupTableVC.h; sourceTree = "<group>"; };
+		E21940051A218D3F00ED3B90 /* SignupTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupTableVC.m; sourceTree = "<group>"; };
 		E219400A1A21C8DD00ED3B90 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
 		E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
 		E21940141A220BF400ED3B90 /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
 		E21940151A220BF400ED3B90 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
 		E21940171A221BAB00ED3B90 /* ErrorMsgLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorMsgLabel.h; path = jygj/ui/ErrorMsgLabel.h; sourceTree = SOURCE_ROOT; };
 		E21940181A221BAB00ED3B90 /* ErrorMsgLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ErrorMsgLabel.m; path = jygj/ui/ErrorMsgLabel.m; sourceTree = SOURCE_ROOT; };
-		E21F00531A176838006E9650 /* jygj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jygj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21F00531A176838006E9650 /* jygj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = jygj.app; path = "无涯.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21F00571A176838006E9650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21F00581A176838006E9650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E21F005A1A176838006E9650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,10 +73,6 @@
 		E29169641A207B1400C30CCA /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		F43EBA8D1A209530003706BB /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		F43EBA8E1A209530003706BB /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
-		F43EBA901A20959D003706BB /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
-		F43EBA911A20959D003706BB /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
-		F4C119361A20E0B6001ACE22 /* SignupTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupTableView.h; sourceTree = "<group>"; };
-		F4C119371A20E0B6001ACE22 /* SignupTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,12 +175,12 @@
 		E23A4CF61A2058A20018DC71 /* vc */ = {
 			isa = PBXGroup;
 			children = (
-				E21940041A218D3F00ED3B90 /* SignupVC.h */,
-				E21940051A218D3F00ED3B90 /* SignupVC.m */,
 				E29169631A207B1400C30CCA /* BaseVC.h */,
 				E29169641A207B1400C30CCA /* BaseVC.m */,
 				F43EBA8D1A209530003706BB /* BaseTableVC.h */,
 				F43EBA8E1A209530003706BB /* BaseTableVC.m */,
+				E21940041A218D3F00ED3B90 /* SignupTableVC.h */,
+				E21940051A218D3F00ED3B90 /* SignupTableVC.m */,
 				E2193FFE1A218A0000ED3B90 /* LoginTableVC.h */,
 				E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */,
 				E21F005D1A176838006E9650 /* EntranceVC.h */,
@@ -205,8 +199,6 @@
 				E24412591A18CD9B00FA50AE /* teacher */,
 				E244125A1A18CDBE00FA50AE /* EntranceView.h */,
 				E244125B1A18CDBE00FA50AE /* EntranceView.m */,
-				F4C119361A20E0B6001ACE22 /* SignupTableView.h */,
-				F4C119371A20E0B6001ACE22 /* SignupTableView.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -220,8 +212,6 @@
 				E244125E1A18CE8900FA50AE /* cell */,
 				E29169601A20780100C30CCA /* BaseView.h */,
 				E29169611A20780100C30CCA /* BaseView.m */,
-				F43EBA901A20959D003706BB /* BaseTableView.h */,
-				F43EBA911A20959D003706BB /* BaseTableView.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -383,7 +373,7 @@
 				E21F005F1A176838006E9650 /* EntranceVC.m in Sources */,
 				E244125C1A18CDBE00FA50AE /* EntranceView.m in Sources */,
 				E21940161A220BF400ED3B90 /* BaseTextField.m in Sources */,
-				E21940061A218D3F00ED3B90 /* SignupVC.m in Sources */,
+				E21940061A218D3F00ED3B90 /* SignupTableVC.m in Sources */,
 				E21F005C1A176838006E9650 /* AppDelegate.m in Sources */,
 				E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */,
 				E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */,
