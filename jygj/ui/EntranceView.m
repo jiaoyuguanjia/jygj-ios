@@ -49,14 +49,16 @@
     
     self.loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
     [mainView addSubview:self.loginBtn ];
-    [self.loginBtn  addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
+    [self.loginBtn  addTarget:self action:@selector(clickLogin) forControlEvents:UIControlEventTouchUpInside];
+
     
-    self.enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-108, 200, 32)];
-    [self.enter setText:@"先随便看看>>"];
-    [self.enter setFont:[UIFont systemFontOfSize:16]];
-    [self.enter setTextColor:[UIColor whiteColor]];
-    
-    [mainView addSubview:self.enter];
+     self.enterBtn = [[UIButton alloc]initWithFrame:WY_CGRectMake((mainView.width-100), view.height-108, 200, 32)];
+    [self.enterBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.enterBtn setTitle:@"先随便看看>>" forState:UIControlStateNormal];
+    [self.enterBtn.titleLabel setFont:[UIFont systemFontOfSize:16]];
+    [mainView addSubview:self.enterBtn];
+    [self.enterBtn  addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
+
     
     
     [view addSubview:mainView];

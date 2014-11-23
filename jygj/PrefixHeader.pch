@@ -20,6 +20,7 @@
 #define WY_GREEN RGB(0, 186, 88)
 #define WY_GREY COLOR_GREY(246)
 #define WY_CGRectMake(x, y, width, height) CGRectMake(x/2.0, y/2.0, width/2.0, height/2.0)
+#define WY_3X_CGRectMake(x, y, width, height) CGRectMake(x/3.0, y/3.0, width/3.0, height/3.0)
 
 #import "UIView+Properties.h"
 
