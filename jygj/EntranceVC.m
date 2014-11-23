@@ -7,7 +7,7 @@
 //
 
 #import "EntranceVC.h"
-#import "SignupVC.h"
+#import "SignupTableVC.h"
 #import "LoginTableVC.h"
 #import "TeacherListVC.h"
 
@@ -54,13 +54,13 @@
 }
 
 - (void) signupStudent:(id)sender{
-    SignupVC *stuVC = [[SignupVC alloc] init];
+    SignupTableVC *stuVC = [[SignupTableVC alloc] init];
     [stuVC setTitle:@"学生注册"];
     [self.navigationController pushViewController:stuVC animated:YES];
 }
 
 - (void) signupTeacher:(id)sender{
-    SignupVC *stuVC = [[SignupVC alloc] init];
+    SignupTableVC *stuVC = [[SignupTableVC alloc] init];
     [stuVC setTitle:@"老师注册"];
     [self.navigationController pushViewController:stuVC animated:YES];
 }
