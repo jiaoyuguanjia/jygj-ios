@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "LoginVC.h"
+#import "LoginTableVC.h"
 
-@interface LoginVC ()
+@interface LoginTableVC ()
 
 @end
 
-@implementation LoginVC
+@implementation LoginTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

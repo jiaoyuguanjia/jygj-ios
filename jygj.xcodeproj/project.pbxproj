@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E21940001A218A0000ED3B90 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2193FFF1A218A0000ED3B90 /* LoginVC.m */; };
+		E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */; };
 		E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940021A218CFB00ED3B90 /* TeacherListVC.m */; };
 		E21940061A218D3F00ED3B90 /* SignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940051A218D3F00ED3B90 /* SignupVC.m */; };
 		E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */; };
@@ -39,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		E209EE2C1A1A31E600576ABA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		E2193FFE1A218A0000ED3B90 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
-		E2193FFF1A218A0000ED3B90 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		E2193FFE1A218A0000ED3B90 /* LoginTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableVC.h; sourceTree = "<group>"; };
+		E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
 		E21940011A218CFB00ED3B90 /* TeacherListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherListVC.h; sourceTree = "<group>"; };
 		E21940021A218CFB00ED3B90 /* TeacherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherListVC.m; sourceTree = "<group>"; };
 		E21940041A218D3F00ED3B90 /* SignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupVC.h; sourceTree = "<group>"; };
@@ -175,8 +175,8 @@
 				E29169641A207B1400C30CCA /* BaseVC.m */,
 				F43EBA8D1A209530003706BB /* BaseTableVC.h */,
 				F43EBA8E1A209530003706BB /* BaseTableVC.m */,
-				E2193FFE1A218A0000ED3B90 /* LoginVC.h */,
-				E2193FFF1A218A0000ED3B90 /* LoginVC.m */,
+				E2193FFE1A218A0000ED3B90 /* LoginTableVC.h */,
+				E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */,
 				E21F005D1A176838006E9650 /* EntranceVC.h */,
 				E21F005E1A176838006E9650 /* EntranceVC.m */,
 				E291695C1A20722100C30CCA /* student */,
@@ -380,7 +380,7 @@
 				F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */,
 				F43EBA921A20959D003706BB /* BaseTableView.m in Sources */,
 				F4C119381A20E0B6001ACE22 /* SignupTableView.m in Sources */,
-				E21940001A218A0000ED3B90 /* LoginVC.m in Sources */,
+				E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */,
 				E29169651A207B1400C30CCA /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

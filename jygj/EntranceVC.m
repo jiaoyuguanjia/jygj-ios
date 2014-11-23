@@ -8,7 +8,7 @@
 
 #import "EntranceVC.h"
 #import "SignupVC.h"
-#import "LoginVC.h"
+#import "LoginTableVC.h"
 #import "TeacherListVC.h"
 
 @interface EntranceVC () <HomeViewDelegate>
@@ -49,7 +49,7 @@
 }
 
 - (void) enterLogin:(id)sender{
-    LoginVC *loginVC = [[LoginVC alloc]init];
+    LoginTableVC *loginVC = [[LoginTableVC alloc]init];
     [self.navigationController pushViewController:loginVC animated:YES];
 }
 

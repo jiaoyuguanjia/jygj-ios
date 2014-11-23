@@ -10,6 +10,6 @@
 #import "BaseTableVC.h"
 
 
-@interface LoginVC : BaseTableVC
+@interface LoginTableVC : BaseTableVC
 
 @end
