@@ -16,7 +16,7 @@
     SignupView *view = [super initWithFrame:frame];
     
     SignupTableView *tableView = [[SignupTableView alloc] initWithFrame:frame];
-    
+    //tableView.allowsSelection = NO;
     [view addSubview:tableView];
     
     return view;
