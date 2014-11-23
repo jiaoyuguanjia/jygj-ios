@@ -15,8 +15,7 @@
     EntranceView *view = [super initWithFrame:frame];
     [view setBackgroundColor:WY_GREEN];
     
-    UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 40, 504, view.height)];
-    
+    UIView *mainView = [[UIView alloc]initWithFrame:WY_CGRectMake((view.width - 252), 40, 504, view.height*2)];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:WY_CGRectMake(0, 62, 324, 160)];
     [imageView setImage:[UIImage imageNamed:@"img_wuya"]];
@@ -35,9 +34,9 @@
     [self.stuSignBtn addTarget:self action:@selector(clickStudent) forControlEvents:UIControlEventTouchUpInside];
     
     
-    SingleColorBtn *teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是老师"];
-    [mainView addSubview:teacherBtn];
-    [teacherBtn addTarget:self action:@selector(clickTeacher) forControlEvents:UIControlEventTouchUpInside];
+    self.teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是老师"];
+    [mainView addSubview:self.teacherBtn];
+    [self.teacherBtn addTarget:self action:@selector(clickTeacher) forControlEvents:UIControlEventTouchUpInside];
     
     
     UILabel *label2 = [[UILabel alloc] initWithFrame:WY_CGRectMake(10, 624, 300, 32)];
@@ -48,15 +47,16 @@
     
     
     
-    SingleColorBtn *loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
-    [mainView addSubview:loginBtn];
-    [loginBtn addTarget:self action:@selector(clickLogin) forControlEvents:UIControlEventTouchUpInside];
+    self.loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
+    [mainView addSubview:self.loginBtn ];
+    [self.loginBtn  addTarget:self action:@selector(clickEnter) forControlEvents:UIControlEventTouchUpInside];
     
-    UILabel *enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-108, 200, 32)];
-    [enter setText:@"先随便看看>>"];
-    [enter setFont:[UIFont systemFontOfSize:16]];
-    [enter setTextColor:[UIColor whiteColor]];
-    [mainView addSubview:enter];
+    self.enter = [[UILabel alloc] initWithFrame:WY_CGRectMake((mainView.width-100), view.height-108, 200, 32)];
+    [self.enter setText:@"先随便看看>>"];
+    [self.enter setFont:[UIFont systemFontOfSize:16]];
+    [self.enter setTextColor:[UIColor whiteColor]];
+    
+    [mainView addSubview:self.enter];
     
     
     [view addSubview:mainView];
