@@ -127,7 +127,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 34)];
     [label setBackgroundColor:WY_GREY];
-    [label setFont:[UIFont boldSystemFontOfSize:14]];
+    [label setFont:[UIFont systemFontOfSize:14]];
     [label setTextColor:WY_BLACK];
     [label setText:@"   登录账户："];
     return label;
@@ -190,6 +190,9 @@
         [_errorMsg setMsg:@"密码长度在6到20位之间"];
     }
 }
+
+
+
 
 
 @end
