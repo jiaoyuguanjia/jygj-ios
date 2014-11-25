@@ -14,8 +14,9 @@
     ErrorMsgLabel *label = [[ErrorMsgLabel alloc] initWithFrame:frame];
     [label setTextColor:[UIColor redColor]];
     [label setFont:[UIFont systemFontOfSize:14]];
+    [label setTextAlignment:NSTextAlignmentLeft];
     if(msg != nil){
-        [self setMessage:msg];
+        [self setMsg:msg];
     }else{
         [label setText:@""];
     }
@@ -28,10 +29,13 @@
     [self.errorImageView removeFromSuperview];
 }
 
--(void)setMessage:(NSString *)msg{
+-(void)setMsg:(NSString *)msg{
     if(msg != nil){
-        self.text = msg;
-        self.errorImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"warning"]];
+        [self setText:[NSString stringWithFormat:@"    %@",msg]];
+        if(self.errorImageView == nil){
+            self.errorImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"warning"]];
+            [self.errorImageView setFrame:CGRectMake(0, 6, 14, 14)];
+        }
         [self addSubview:self.errorImageView];
     }else{
         [self clean];
@@ -39,8 +43,6 @@
 }
 
 
-//-(void)drawTextInRect:(CGRect)rect{
-//    return [super drawTextInRect:UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(0,14,0,0))];
-//}
+
 
 @end

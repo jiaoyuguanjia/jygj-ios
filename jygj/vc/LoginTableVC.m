@@ -112,7 +112,7 @@
         }else if(indexPath.row == 2){
             UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"loginGreyCell"];
             [cell setBackgroundColor:WY_GREY];
-            self.errorMsg = [[ErrorMsgLabel alloc] initWithFrame:CGRectMake(16, 0, SCREEN_WIDTH-16, 20) message:@"test"];
+            self.errorMsg = [[ErrorMsgLabel alloc] initWithFrame:CGRectMake(16, 0, SCREEN_WIDTH-16, 30) message:@""];
             [cell.contentView addSubview:self.errorMsg];
             return cell;
         }else{
@@ -135,7 +135,21 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     SingleColorBtn *loginBtn = [[SingleColorBtn alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50) textColor:[UIColor whiteColor] bgColor:WY_GREEN text:@"登 录" font:[UIFont boldSystemFontOfSize:20] radius:0];
+    [loginBtn addTarget:self action:@selector(submitLogin) forControlEvents:UIControlEventTouchUpInside];
     return loginBtn;
+}
+
+#pragma 提交
+-(void)submitLogin{
+    if([self isInputCorrect]){
+        [_errorMsg clean];
+        
+        
+        
+        
+    }else{
+        [self showErrors];
+    }
 }
 
 
@@ -151,15 +165,31 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    if(textField.tag == 2 && [[self.phoneTextField.text copy] length] == 12 && [[self.passTextField.text copy] length] >=6 && [[self.passTextField.text copy] length] <=20){
-        NSLog(@"Input correct");
-        
+    if([self isInputCorrect]){
+        [_errorMsg clean];
     }else{
-        
+        [self showErrors];
     }
     return YES;
 }
 
+
+-(BOOL)isInputCorrect{
+    if([[self.phoneTextField.text copy] length] != 11 || [[self.passTextField.text copy] length] <6 || [[self.passTextField.text copy] length] >20){
+        return NO;
+    }else{
+        return YES;
+    }
+}
+
+-(void)showErrors{
+    if([[self.phoneTextField.text copy] length] != 11){
+        //手机号码输入不完整
+        [_errorMsg setMsg:@"手机号码输入不正确"];
+    }else if([[self.passTextField.text copy] length] < 6 || [[self.passTextField.text copy] length] > 20){
+        [_errorMsg setMsg:@"密码长度在6到20位之间"];
+    }
+}
 
 
 @end

@@ -17,4 +17,6 @@
 
 -(void)clean;
 
+-(void)setMsg:(NSString *)msg;
+
 @end

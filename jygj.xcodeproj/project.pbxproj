@@ -50,7 +50,7 @@
 		E21940151A220BF400ED3B90 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
 		E21940171A221BAB00ED3B90 /* ErrorMsgLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorMsgLabel.h; path = jygj/ui/ErrorMsgLabel.h; sourceTree = SOURCE_ROOT; };
 		E21940181A221BAB00ED3B90 /* ErrorMsgLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ErrorMsgLabel.m; path = jygj/ui/ErrorMsgLabel.m; sourceTree = SOURCE_ROOT; };
-		E21F00531A176838006E9650 /* jygj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = jygj.app; path = "无涯.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21F00531A176838006E9650 /* 无涯.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "无涯.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21F00571A176838006E9650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21F00581A176838006E9650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E21F005A1A176838006E9650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		E21F00541A176838006E9650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E21F00531A176838006E9650 /* jygj.app */,
+				E21F00531A176838006E9650 /* 无涯.app */,
 				E21F006C1A176838006E9650 /* jygjTests.xctest */,
 			);
 			name = Products;
@@ -289,7 +289,7 @@
 			);
 			name = "无涯";
 			productName = jygj;
-			productReference = E21F00531A176838006E9650 /* jygj.app */;
+			productReference = E21F00531A176838006E9650 /* 无涯.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E21F006B1A176838006E9650 /* jygjTests */ = {
@@ -383,8 +383,6 @@
 				E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */,
 				F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */,
 				E21940191A221BAB00ED3B90 /* ErrorMsgLabel.m in Sources */,
-				F43EBA921A20959D003706BB /* BaseTableView.m in Sources */,
-				F4C119381A20E0B6001ACE22 /* SignupTableView.m in Sources */,
 				E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */,
 				E29169651A207B1400C30CCA /* BaseVC.m in Sources */,
 			);
