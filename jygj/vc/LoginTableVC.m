@@ -10,6 +10,9 @@
 #import "BaseTextField.h"
 #import "SingleColorBtn.h"
 #import "ErrorMsgLabel.h"
+#import "HomePageTableVC.h"
+#import "StuHelpTableVC.h"
+#import "StuMineTableVC.h"
 
 @interface LoginTableVC ()<UITextFieldDelegate>
 
@@ -144,8 +147,22 @@
     if([self isInputCorrect]){
         [_errorMsg clean];
         
+        //需要根据用户登录角色的类型转到不同的页面
         
+        NSMutableArray *controllers = [[NSMutableArray alloc] init];
         
+        HomePageTableVC *home = [[HomePageTableVC alloc] init];
+        [controllers addObject:home];
+        
+        StuHelpTableVC *help = [[StuHelpTableVC alloc] init];
+        [controllers addObject:help];
+        
+        StuMineTableVC *mine = [[StuMineTableVC alloc] init];
+        [controllers addObject:mine];
+        
+        UITabBarController *mainTab = [[UITabBarController alloc] init];
+        [mainTab setViewControllers:controllers animated:YES];
+        [self.navigationController pushViewController:mainTab animated:YES];
         
     }else{
         [self showErrors];
@@ -165,10 +182,8 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    if([self isInputCorrect]){
-        [_errorMsg clean];
-    }else{
-        [self showErrors];
+    if(textField.tag == 2){
+        [self submitLogin];
     }
     return YES;
 }
@@ -185,7 +200,7 @@
 -(void)showErrors{
     if([[self.phoneTextField.text copy] length] != 11){
         //手机号码输入不完整
-        [_errorMsg setMsg:@"手机号码输入不正确"];
+        [_errorMsg setMsg:@"请输入11位手机号码"];
     }else if([[self.passTextField.text copy] length] < 6 || [[self.passTextField.text copy] length] > 20){
         [_errorMsg setMsg:@"密码长度在6到20位之间"];
     }

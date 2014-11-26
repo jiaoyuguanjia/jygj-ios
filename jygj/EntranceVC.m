@@ -9,7 +9,7 @@
 #import "EntranceVC.h"
 #import "SignupTableVC.h"
 #import "LoginTableVC.h"
-#import "TeacherListVC.h"
+#import "HomePageTableVC.h"
 
 @interface EntranceVC () <HomeViewDelegate>
 
@@ -44,7 +44,7 @@
 #pragma delegate methods
 
 - (void) enterList:(id)sender{
-    TeacherListVC *listVC = [[TeacherListVC alloc] init];
+    HomePageTableVC *listVC = [[HomePageTableVC alloc] init];
     [self.navigationController pushViewController:listVC animated:YES];
 }
 
