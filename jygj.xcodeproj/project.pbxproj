@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */; };
-		E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940021A218CFB00ED3B90 /* TeacherListVC.m */; };
 		E21940061A218D3F00ED3B90 /* SignupTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940051A218D3F00ED3B90 /* SignupTableVC.m */; };
 		E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */; };
 		E21940161A220BF400ED3B90 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940151A220BF400ED3B90 /* BaseTextField.m */; };
@@ -23,6 +22,9 @@
 		E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412651A18CF4C00FA50AE /* SingleColorBtn.m */; };
 		E29169621A20780100C30CCA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169611A20780100C30CCA /* BaseView.m */; };
 		E29169651A207B1400C30CCA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169641A207B1400C30CCA /* BaseVC.m */; };
+		E2A9C3301A26269A00B8F222 /* StuHelpTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9C32D1A26269A00B8F222 /* StuHelpTableVC.m */; };
+		E2A9C3311A26269A00B8F222 /* StuMineTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9C32F1A26269A00B8F222 /* StuMineTableVC.m */; };
+		E2A9C3341A2626A800B8F222 /* HomePageTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9C3331A2626A800B8F222 /* HomePageTableVC.m */; };
 		F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F43EBA8E1A209530003706BB /* BaseTableVC.m */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +42,6 @@
 		E209EE2C1A1A31E600576ABA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E2193FFE1A218A0000ED3B90 /* LoginTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableVC.h; sourceTree = "<group>"; };
 		E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableVC.m; sourceTree = "<group>"; };
-		E21940011A218CFB00ED3B90 /* TeacherListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherListVC.h; sourceTree = "<group>"; };
-		E21940021A218CFB00ED3B90 /* TeacherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherListVC.m; sourceTree = "<group>"; };
 		E21940041A218D3F00ED3B90 /* SignupTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupTableVC.h; sourceTree = "<group>"; };
 		E21940051A218D3F00ED3B90 /* SignupTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupTableVC.m; sourceTree = "<group>"; };
 		E219400A1A21C8DD00ED3B90 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
@@ -71,6 +71,12 @@
 		E29169611A20780100C30CCA /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		E29169631A207B1400C30CCA /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		E29169641A207B1400C30CCA /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		E2A9C32C1A26269A00B8F222 /* StuHelpTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuHelpTableVC.h; sourceTree = "<group>"; };
+		E2A9C32D1A26269A00B8F222 /* StuHelpTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuHelpTableVC.m; sourceTree = "<group>"; };
+		E2A9C32E1A26269A00B8F222 /* StuMineTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StuMineTableVC.h; sourceTree = "<group>"; };
+		E2A9C32F1A26269A00B8F222 /* StuMineTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuMineTableVC.m; sourceTree = "<group>"; };
+		E2A9C3321A2626A800B8F222 /* HomePageTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTableVC.h; sourceTree = "<group>"; };
+		E2A9C3331A2626A800B8F222 /* HomePageTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTableVC.m; sourceTree = "<group>"; };
 		F43EBA8D1A209530003706BB /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		F43EBA8E1A209530003706BB /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +191,8 @@
 				E2193FFF1A218A0000ED3B90 /* LoginTableVC.m */,
 				E21F005D1A176838006E9650 /* EntranceVC.h */,
 				E21F005E1A176838006E9650 /* EntranceVC.m */,
+				E2A9C3321A2626A800B8F222 /* HomePageTableVC.h */,
+				E2A9C3331A2626A800B8F222 /* HomePageTableVC.m */,
 				E291695C1A20722100C30CCA /* student */,
 				E29169661A207BDD00C30CCA /* teacher */,
 			);
@@ -259,8 +267,10 @@
 		E291695C1A20722100C30CCA /* student */ = {
 			isa = PBXGroup;
 			children = (
-				E21940011A218CFB00ED3B90 /* TeacherListVC.h */,
-				E21940021A218CFB00ED3B90 /* TeacherListVC.m */,
+				E2A9C32C1A26269A00B8F222 /* StuHelpTableVC.h */,
+				E2A9C32D1A26269A00B8F222 /* StuHelpTableVC.m */,
+				E2A9C32E1A26269A00B8F222 /* StuMineTableVC.h */,
+				E2A9C32F1A26269A00B8F222 /* StuMineTableVC.m */,
 			);
 			path = student;
 			sourceTree = "<group>";
@@ -371,19 +381,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21F005F1A176838006E9650 /* EntranceVC.m in Sources */,
+				E2A9C3301A26269A00B8F222 /* StuHelpTableVC.m in Sources */,
 				E244125C1A18CDBE00FA50AE /* EntranceView.m in Sources */,
 				E21940161A220BF400ED3B90 /* BaseTextField.m in Sources */,
 				E21940061A218D3F00ED3B90 /* SignupTableVC.m in Sources */,
 				E21F005C1A176838006E9650 /* AppDelegate.m in Sources */,
-				E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */,
 				E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */,
 				E21F00591A176838006E9650 /* main.m in Sources */,
 				E23A4CF41A2042C90018DC71 /* UIView+Properties.m in Sources */,
 				E29169621A20780100C30CCA /* BaseView.m in Sources */,
 				E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */,
 				F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */,
+				E2A9C3341A2626A800B8F222 /* HomePageTableVC.m in Sources */,
 				E21940191A221BAB00ED3B90 /* ErrorMsgLabel.m in Sources */,
 				E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */,
+				E2A9C3311A26269A00B8F222 /* StuMineTableVC.m in Sources */,
 				E29169651A207B1400C30CCA /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

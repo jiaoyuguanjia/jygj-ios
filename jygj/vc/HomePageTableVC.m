@@ -6,22 +6,20 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "TeacherListVC.h"
+#import "HomePageTableVC.h"
 #import "BaseView.h"
 
-@interface TeacherListVC ()
+@interface HomePageTableVC ()
 
 @end
 
-@implementation TeacherListVC
+@implementation HomePageTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     BaseView *baseView = [[BaseView alloc] initWithFrame:FULL_SCREEN];
     [self.view addSubview:baseView];
-    
-    [self setTitle:@"老师列表"];
-    [self setTitleBarColorGrey];
+    [self setTitleBarColorGreen];
 }
 
 

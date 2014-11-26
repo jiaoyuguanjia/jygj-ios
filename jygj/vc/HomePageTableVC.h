@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 teacher.im. All rights reserved.
 //
 
-#import "BaseVC.h"
+#import "BaseTableVC.h"
 
-@interface TeacherListVC : BaseVC
+@interface HomePageTableVC : BaseTableVC
 
 @end

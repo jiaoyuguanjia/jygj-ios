@@ -10,6 +10,9 @@
 #import "BaseTextField.h"
 #import "SingleColorBtn.h"
 #import "ErrorMsgLabel.h"
+#import "HomePageTableVC.h"
+#import "StuHelpTableVC.h"
+#import "StuMineTableVC.h"
 
 @interface LoginTableVC ()<UITextFieldDelegate>
 
@@ -130,6 +133,7 @@
     [label setFont:[UIFont systemFontOfSize:14]];
     [label setTextColor:WY_BLACK];
     [label setText:@"   登录账户："];
+    
     return label;
 }
 
@@ -144,8 +148,29 @@
     if([self isInputCorrect]){
         [_errorMsg clean];
         
+        //需要根据用户登录角色的类型转到不同的页面
+        
+        NSMutableArray *controllers = [[NSMutableArray alloc] init];
+        
+        HomePageTableVC *home = [[HomePageTableVC alloc] init];
+        [controllers addObject:home];
+        [home setTitle:@"首页"];
         
         
+        StuHelpTableVC *help = [[StuHelpTableVC alloc] init];
+        [controllers addObject:help];
+        [help setTitle:@"帮我找"];
+        
+        StuMineTableVC *mine = [[StuMineTableVC alloc] init];
+        [controllers addObject:mine];
+        [mine setTitle:@"我的"];
+        
+        UITabBarController *mainTab = [[UITabBarController alloc] init];
+        [mainTab setViewControllers:controllers animated:YES];
+        [mainTab.tabBar setBackgroundColor:WY_GREY];
+
+        
+        [self.navigationController pushViewController:mainTab animated:YES];
         
     }else{
         [self showErrors];
@@ -165,10 +190,8 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    if([self isInputCorrect]){
-        [_errorMsg clean];
-    }else{
-        [self showErrors];
+    if(textField.tag == 2){
+        [self submitLogin];
     }
     return YES;
 }
@@ -185,7 +208,7 @@
 -(void)showErrors{
     if([[self.phoneTextField.text copy] length] != 11){
         //手机号码输入不完整
-        [_errorMsg setMsg:@"手机号码输入不正确"];
+        [_errorMsg setMsg:@"请输入11位手机号码"];
     }else if([[self.passTextField.text copy] length] < 6 || [[self.passTextField.text copy] length] > 20){
         [_errorMsg setMsg:@"密码长度在6到20位之间"];
     }
