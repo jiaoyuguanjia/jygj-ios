@@ -14,9 +14,17 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.returnKeyType = UIReturnKeyDone;
+        self.borderStyle = UITextBorderStyleRoundedRect;
+        self.delegate = self;
     }
     return self;
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 /*
