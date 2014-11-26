@@ -54,15 +54,13 @@
 }
 
 - (void) signupStudent:(id)sender{
-    SignupTableVC *stuVC = [[SignupTableVC alloc] init];
-    [stuVC setTitle:@"学生注册"];
+    SignupTableVC *stuVC = [[SignupTableVC alloc] initWithUserType:NO];
     [self.navigationController pushViewController:stuVC animated:YES];
 }
 
 - (void) signupTeacher:(id)sender{
-    SignupTableVC *stuVC = [[SignupTableVC alloc] init];
-    [stuVC setTitle:@"老师注册"];
-    [self.navigationController pushViewController:stuVC animated:YES];
+    SignupTableVC *tutorVC = [[SignupTableVC alloc] initWithUserType:YES];
+    [self.navigationController pushViewController:tutorVC animated:YES];
 }
 
 

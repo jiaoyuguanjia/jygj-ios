@@ -11,4 +11,6 @@
 
 @interface SignupTableVC : BaseTableVC
 
+@property(nonatomic, assign) BOOL isTutor;
+-(id)initWithUserType:(BOOL)isTutor;
 @end
