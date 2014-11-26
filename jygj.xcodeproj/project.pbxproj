@@ -11,6 +11,8 @@
 		E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940021A218CFB00ED3B90 /* TeacherListVC.m */; };
 		E21940061A218D3F00ED3B90 /* SignupTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940051A218D3F00ED3B90 /* SignupTableVC.m */; };
 		E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */; };
+		E21940161A220BF400ED3B90 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940151A220BF400ED3B90 /* BaseTextField.m */; };
+		E21940191A221BAB00ED3B90 /* ErrorMsgLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E21940181A221BAB00ED3B90 /* ErrorMsgLabel.m */; };
 		E21F00591A176838006E9650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F00581A176838006E9650 /* main.m */; };
 		E21F005C1A176838006E9650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F005B1A176838006E9650 /* AppDelegate.m */; };
 		E21F005F1A176838006E9650 /* EntranceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E21F005E1A176838006E9650 /* EntranceVC.m */; };
@@ -19,13 +21,9 @@
 		E23A4CF41A2042C90018DC71 /* UIView+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E23A4CF31A2042C90018DC71 /* UIView+Properties.m */; };
 		E244125C1A18CDBE00FA50AE /* EntranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E244125B1A18CDBE00FA50AE /* EntranceView.m */; };
 		E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412651A18CF4C00FA50AE /* SingleColorBtn.m */; };
-		E24412691A18D91300FA50AE /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E24412681A18D91300FA50AE /* NormalLabel.m */; };
 		E29169621A20780100C30CCA /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169611A20780100C30CCA /* BaseView.m */; };
 		E29169651A207B1400C30CCA /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E29169641A207B1400C30CCA /* BaseVC.m */; };
 		F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F43EBA8E1A209530003706BB /* BaseTableVC.m */; };
-		F471EF4B1A22291500B14141 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F471EF4A1A22291500B14141 /* BaseTextField.m */; };
-		F471EF4E1A222DC300B14141 /* NumberPadTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F471EF4D1A222DC300B14141 /* NumberPadTextField.m */; };
-		F471EF521A22318800B14141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471EF511A22318800B14141 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +46,10 @@
 		E21940051A218D3F00ED3B90 /* SignupTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupTableVC.m; sourceTree = "<group>"; };
 		E219400A1A21C8DD00ED3B90 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
 		E219400B1A21C8DD00ED3B90 /* UIViewController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
+		E21940141A220BF400ED3B90 /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
+		E21940151A220BF400ED3B90 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
+		E21940171A221BAB00ED3B90 /* ErrorMsgLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorMsgLabel.h; path = jygj/ui/ErrorMsgLabel.h; sourceTree = SOURCE_ROOT; };
+		E21940181A221BAB00ED3B90 /* ErrorMsgLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ErrorMsgLabel.m; path = jygj/ui/ErrorMsgLabel.m; sourceTree = SOURCE_ROOT; };
 		E21F00531A176838006E9650 /* 无涯.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "无涯.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21F00571A176838006E9650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E21F00581A176838006E9650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,19 +67,12 @@
 		E244125B1A18CDBE00FA50AE /* EntranceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntranceView.m; sourceTree = "<group>"; };
 		E24412641A18CF4C00FA50AE /* SingleColorBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleColorBtn.h; sourceTree = "<group>"; };
 		E24412651A18CF4C00FA50AE /* SingleColorBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleColorBtn.m; sourceTree = "<group>"; };
-		E24412671A18D91300FA50AE /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
-		E24412681A18D91300FA50AE /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
 		E29169601A20780100C30CCA /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		E29169611A20780100C30CCA /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		E29169631A207B1400C30CCA /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		E29169641A207B1400C30CCA /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		F43EBA8D1A209530003706BB /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		F43EBA8E1A209530003706BB /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
-		F471EF491A22291500B14141 /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
-		F471EF4A1A22291500B14141 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
-		F471EF4C1A222DC300B14141 /* NumberPadTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberPadTextField.h; sourceTree = "<group>"; };
-		F471EF4D1A222DC300B14141 /* NumberPadTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPadTextField.m; sourceTree = "<group>"; };
-		F471EF511A22318800B14141 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F471EF521A22318800B14141 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +93,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21940131A220BBD00ED3B90 /* textField */ = {
+			isa = PBXGroup;
+			children = (
+				E21940141A220BF400ED3B90 /* BaseTextField.h */,
+				E21940151A220BF400ED3B90 /* BaseTextField.m */,
+			);
+			path = textField;
+			sourceTree = "<group>";
+		};
 		E21F004A1A176838006E9650 = {
 			isa = PBXGroup;
 			children = (
-				F471EF511A22318800B14141 /* Foundation.framework */,
 				E21F00551A176838006E9650 /* jygj */,
 				E21F006F1A176838006E9650 /* jygjTests */,
 				E21F00541A176838006E9650 /* Products */,
@@ -204,10 +206,10 @@
 		E24412571A18CD9B00FA50AE /* base */ = {
 			isa = PBXGroup;
 			children = (
-				F471EF481A2228CC00B14141 /* textfield */,
+				E21940131A220BBD00ED3B90 /* textField */,
 				E24412631A18CF3700FA50AE /* btn */,
 				E244125F1A18CEAE00FA50AE /* label */,
-				E244125E1A18CE8900FA50AE /* table */,
+				E244125E1A18CE8900FA50AE /* cell */,
 				E29169601A20780100C30CCA /* BaseView.h */,
 				E29169611A20780100C30CCA /* BaseView.m */,
 			);
@@ -228,18 +230,19 @@
 			path = teacher;
 			sourceTree = "<group>";
 		};
-		E244125E1A18CE8900FA50AE /* table */ = {
+		E244125E1A18CE8900FA50AE /* cell */ = {
 			isa = PBXGroup;
 			children = (
 			);
+			name = cell;
 			path = table;
 			sourceTree = "<group>";
 		};
 		E244125F1A18CEAE00FA50AE /* label */ = {
 			isa = PBXGroup;
 			children = (
-				E24412671A18D91300FA50AE /* NormalLabel.h */,
-				E24412681A18D91300FA50AE /* NormalLabel.m */,
+				E21940171A221BAB00ED3B90 /* ErrorMsgLabel.h */,
+				E21940181A221BAB00ED3B90 /* ErrorMsgLabel.m */,
 			);
 			path = label;
 			sourceTree = "<group>";
@@ -267,17 +270,6 @@
 			children = (
 			);
 			path = teacher;
-			sourceTree = "<group>";
-		};
-		F471EF481A2228CC00B14141 /* textfield */ = {
-			isa = PBXGroup;
-			children = (
-				F471EF491A22291500B14141 /* BaseTextField.h */,
-				F471EF4A1A22291500B14141 /* BaseTextField.m */,
-				F471EF4C1A222DC300B14141 /* NumberPadTextField.h */,
-				F471EF4D1A222DC300B14141 /* NumberPadTextField.m */,
-			);
-			name = textfield;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,20 +372,19 @@
 			files = (
 				E21F005F1A176838006E9650 /* EntranceVC.m in Sources */,
 				E244125C1A18CDBE00FA50AE /* EntranceView.m in Sources */,
+				E21940161A220BF400ED3B90 /* BaseTextField.m in Sources */,
 				E21940061A218D3F00ED3B90 /* SignupTableVC.m in Sources */,
 				E21F005C1A176838006E9650 /* AppDelegate.m in Sources */,
 				E21940031A218CFB00ED3B90 /* TeacherListVC.m in Sources */,
 				E24412661A18CF4C00FA50AE /* SingleColorBtn.m in Sources */,
-				F471EF4E1A222DC300B14141 /* NumberPadTextField.m in Sources */,
 				E21F00591A176838006E9650 /* main.m in Sources */,
 				E23A4CF41A2042C90018DC71 /* UIView+Properties.m in Sources */,
-				E24412691A18D91300FA50AE /* NormalLabel.m in Sources */,
 				E29169621A20780100C30CCA /* BaseView.m in Sources */,
 				E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */,
 				F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */,
+				E21940191A221BAB00ED3B90 /* ErrorMsgLabel.m in Sources */,
 				E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */,
 				E29169651A207B1400C30CCA /* BaseVC.m in Sources */,
-				F471EF4B1A22291500B14141 /* BaseTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

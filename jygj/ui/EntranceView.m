@@ -29,12 +29,12 @@
     [mainView addSubview:label];
     
     
-     self.stuSignBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 352, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是学生"];
+     self.stuSignBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 352, 482, 76) textColor:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是学生"];
     [mainView addSubview:self.stuSignBtn];
     [self.stuSignBtn addTarget:self action:@selector(clickStudent) forControlEvents:UIControlEventTouchUpInside];
     
     
-    self.teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是老师"];
+    self.teacherBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 466, 482, 76) textColor:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"我是老师"];
     [mainView addSubview:self.teacherBtn];
     [self.teacherBtn addTarget:self action:@selector(clickTeacher) forControlEvents:UIControlEventTouchUpInside];
     
@@ -47,7 +47,7 @@
     
     
     
-    self.loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) color:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
+    self.loginBtn = [[SingleColorBtn alloc] initWithFrame:WY_CGRectMake(10, 676, 482, 76) textColor:[UIColor whiteColor] bgColor:RGB(255, 145, 64) text:@"立即登录"];
     [mainView addSubview:self.loginBtn ];
     [self.loginBtn  addTarget:self action:@selector(clickLogin) forControlEvents:UIControlEventTouchUpInside];
 
