@@ -133,6 +133,7 @@
     [label setFont:[UIFont systemFontOfSize:14]];
     [label setTextColor:WY_BLACK];
     [label setText:@"   登录账户："];
+    
     return label;
 }
 
@@ -153,15 +154,22 @@
         
         HomePageTableVC *home = [[HomePageTableVC alloc] init];
         [controllers addObject:home];
+        [home setTitle:@"首页"];
+        
         
         StuHelpTableVC *help = [[StuHelpTableVC alloc] init];
         [controllers addObject:help];
+        [help setTitle:@"帮我找"];
         
         StuMineTableVC *mine = [[StuMineTableVC alloc] init];
         [controllers addObject:mine];
+        [mine setTitle:@"我的"];
         
         UITabBarController *mainTab = [[UITabBarController alloc] init];
         [mainTab setViewControllers:controllers animated:YES];
+        [mainTab.tabBar setBackgroundColor:WY_GREY];
+
+        
         [self.navigationController pushViewController:mainTab animated:YES];
         
     }else{

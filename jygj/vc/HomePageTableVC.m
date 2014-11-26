@@ -23,18 +23,4 @@
 }
 
 
--(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if(self){
-//        UITabBarItem *bar = [[UITabBarItem alloc] initWithTitle:@"首页" image:[UIImage imageNamed:@"btn_home_i"] selectedImage:[UIImage imageNamed:@"btn_home_a"]];
-//        UITabBarItem *bar = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemMostRecent tag:1];
-
-//        self.tabBarItem = bar;
-        
-    
-    }
-    return self;
-}
-
-
 @end
