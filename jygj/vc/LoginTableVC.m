@@ -154,16 +154,17 @@
         
         HomePageTableVC *home = [[HomePageTableVC alloc] init];
         [controllers addObject:home];
-        [home setTitle:@"首页"];
+        [home setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"btn_home_i"] selectedImage:[UIImage imageNamed:@"btn_home_a"]]];
         
         
         StuHelpTableVC *help = [[StuHelpTableVC alloc] init];
         [controllers addObject:help];
-        [help setTitle:@"帮我找"];
+        [help setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"帮我找" image:[UIImage imageNamed:@"btn_help_i"] selectedImage:[UIImage imageNamed:@"btn_help_a"]]];
+       
         
         StuMineTableVC *mine = [[StuMineTableVC alloc] init];
         [controllers addObject:mine];
-        [mine setTitle:@"我的"];
+         [mine setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"btn_mine_i"] selectedImage:[UIImage imageNamed:@"btn_mine_a"]]];
         
         UITabBarController *mainTab = [[UITabBarController alloc] init];
         [mainTab setViewControllers:controllers animated:YES];
