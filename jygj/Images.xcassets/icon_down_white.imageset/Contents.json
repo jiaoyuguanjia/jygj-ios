@@ -11,8 +11,8 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "icon_down_white@3x.png",
-      "unassigned" : true
+      "scale" : "3x",
+      "filename" : "icon_down_white@3x.png"
     }
   ],
   "info" : {

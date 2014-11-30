@@ -11,8 +11,8 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "btn_home_i@3x.png",
-      "unassigned" : true
+      "scale" : "3x",
+      "filename" : "btn_home_i@3x.png"
     }
   ],
   "info" : {
