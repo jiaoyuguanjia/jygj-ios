@@ -11,6 +11,7 @@
 #import "SingleColorBtn.h"
 #import "BaseTextField.h"
 #import "ErrorMsgLabel.h"
+#import "GRAlertView.h"
 
 @interface SignupTableVC ()<UITextFieldDelegate>
 
@@ -200,8 +201,6 @@
 #pragma 提交
 -(void)submitSignup{
     if([self isInputCorrect]){
-        [_errorMsg clean];
-        
         
         
         
@@ -227,7 +226,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     if([self isInputCorrect]){
-        [_errorMsg clean];
+        
     }else{
         [self showErrors];
     }
@@ -245,14 +244,12 @@
 }
 
 -(void)showErrors{
-    [_errorMsg setTextColor:[UIColor redColor]];
     if([[self.phoneTextField.text copy] length] != 11){
-        //手机号码输入不完整
-        [_errorMsg setMsg:@"手机号码输入不正确"];
+        [self alertError:@"手机号码输入不正确"];
     }else if([[self.passTextField.text copy] length] < 6 || [[self.passTextField.text copy] length] > 20){
-        [_errorMsg setMsg:@"密码长度在6到20位之间"];
+        [self alertError:@"密码长度在6到20位之间"];
     }else if([[self.veriCodeTextField.text copy] length] != 5){
-        [_errorMsg setMsg:@"验证码输入不正确"];
+        [self alertError:@"验证码输入不正确"];
     }
 }
 -(void)toCountDometimer{
@@ -282,5 +279,19 @@
         self.isCheck = YES;
         [self.checkBox setImage:[UIImage imageNamed:@"icon_checkbox_a"] forState:UIControlStateNormal];
     }
+}
+-(void)alertError:(NSString *) msg{
+    GRAlertView *alert = [[GRAlertView alloc] initWithTitle:nil
+                                           message:msg
+                                          delegate:self
+                                 cancelButtonTitle:nil
+                                 otherButtonTitles:@"关闭", nil];
+    alert.style = GRAlertStyleWarning;
+    [alert setImage:@"warning"];
+    [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(closeAlert:) userInfo:alert repeats:NO];
+    [alert show];
+}
+- (void)closeAlert:(NSTimer*)timer {
+    [(UIAlertView*) timer.userInfo  dismissWithClickedButtonIndex:0 animated:YES];
 }
 @end
