@@ -38,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showLeftBtn];
     if (self.isTutor) {
         [self setTitle:@"老师注册"];
     }else{
@@ -104,7 +105,7 @@
                 self.phoneTextField.tag = 1;
                 
                 self.sendVerificationCodeBtn = [[SingleColorBtn alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*5/7, 0,(SCREEN_WIDTH*2/7), 56) textColor:[UIColor whiteColor] bgColor:WY_GREEN text:@"获取验证码" font:[UIFont boldSystemFontOfSize:13] radius:0];
-                self.sendVerificationCodeBtn.titleLabel.lineBreakMode = UILineBreakModeCharacterWrap;
+                [self.sendVerificationCodeBtn.titleLabel setNumberOfLines:2];
                 [self.sendVerificationCodeBtn addTarget:self action:@selector(sendVerificationCode) forControlEvents:UIControlEventTouchUpInside];
                 [cell.contentView addSubview:self.phoneTextField];
                 [cell.contentView addSubview:self.sendVerificationCodeBtn];

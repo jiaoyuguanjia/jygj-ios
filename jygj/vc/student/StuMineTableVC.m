@@ -18,6 +18,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"个人中心";
     self.navigationItem.leftBarButtonItem = nil;
+    [self setTitleBarColorGreyWithLeftBtn:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning {

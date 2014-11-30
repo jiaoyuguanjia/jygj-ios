@@ -10,21 +10,29 @@
 
 @implementation UIViewController (Ext)
 
--(void)setTitleBarColorGreen{
+-(void)setTitleBarColorGreenWithLeftBtn:(Boolean)hasLeftBtn{
     self.navigationController.navigationBar.barTintColor = WY_GREEN;
     NSDictionary *dic = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
     self.navigationController.navigationBar.titleTextAttributes = dic;
-    [self setCustomLeftBtn];
+    if(hasLeftBtn){
+        [self showLeftBtn];
+    }else{
+        [self hideLeftBtn];
+    }
 }
 
--(void)setTitleBarColorGrey{
+-(void)setTitleBarColorGreyWithLeftBtn:(Boolean) hasLeftBtn{
     self.navigationController.navigationBar.barTintColor = COLOR_GREY(246);
     NSDictionary *dic = @{NSForegroundColorAttributeName:[UIColor blackColor]};
     self.navigationController.navigationBar.titleTextAttributes = dic;
-    [self setCustomLeftBtn];
+    if(hasLeftBtn){
+        [self showLeftBtn];
+    }else{
+        [self hideLeftBtn];
+    }
 }
 
--(void)setCustomLeftBtn{
+-(void)showLeftBtn{
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(leftBtnClicked)
@@ -32,6 +40,7 @@
     leftBtn.width = 25;
     leftBtn.height = 25;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    
 }
 
 /**
@@ -39,6 +48,10 @@
  **/
 -(void)leftBtnClicked{
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)hideLeftBtn{
+    [self.navigationItem setHidesBackButton:YES animated:NO];
 }
 
 @end

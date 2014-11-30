@@ -10,8 +10,12 @@
 
 @interface UIViewController (Ext)
 
--(void)setTitleBarColorGreen;
+-(void)setTitleBarColorGreyWithLeftBtn:(Boolean) hasLeftBtn;
 
--(void)setTitleBarColorGrey;
+-(void)setTitleBarColorGreenWithLeftBtn:(Boolean)hasLeftBtn;
+
+-(void)showLeftBtn;
+
+-(void)hideLeftBtn;
 
 @end

@@ -19,7 +19,7 @@
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.translucent = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    [self setTitleBarColorGreen];
+    [self setTitleBarColorGreenWithLeftBtn:NO];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
         self.tableView.separatorInset = UIEdgeInsetsZero;
     }

@@ -28,6 +28,7 @@
     [super viewDidLoad];
     self.title =@"登录";
     self.tableView.delegate = self;
+    [self showLeftBtn];
     [self.tableView setBackgroundColor:WY_GREY];
 }
 

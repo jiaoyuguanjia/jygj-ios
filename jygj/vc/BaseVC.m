@@ -20,7 +20,7 @@
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.translucent = NO;
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    [self setTitleBarColorGrey];
+    [self setTitleBarColorGreyWithLeftBtn:NO];
 }
 
 @end
