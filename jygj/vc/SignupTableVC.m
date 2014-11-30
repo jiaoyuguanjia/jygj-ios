@@ -18,6 +18,11 @@
 @property(nonatomic,strong) BaseTextField *veriCodeTextField;
 @property(nonatomic,strong) BaseTextField *passTextField;
 @property(nonatomic,strong) ErrorMsgLabel *errorMsg;
+@property(nonatomic,strong) NSTimer *countDowntimer;
+@property(nonatomic) int _countDownNum;
+@property(nonatomic) BOOL isCheck;
+@property(nonatomic,strong) UIButton *checkBox;
+@property(nonatomic,strong) SingleColorBtn *sendVerificationCodeBtn;
 
 @end
 
@@ -41,6 +46,8 @@
     
     self.tableView.delegate = self;
     [self.tableView setBackgroundColor:WY_GREY];
+    /**默认选择*/
+    self.isCheck = YES;
 
 }
 
@@ -52,10 +59,10 @@
     if(indexPath.section == 0){
         switch (indexPath.row) {
             case 3:
-                height = SCREEN_HEIGHT - 70*3 - 34 - 50;
+                height = SCREEN_HEIGHT - 56*3 - 34 - 50;
                 break;
             default:
-                height = 70;
+                height = 56;
                 break;
         }
     }
@@ -92,31 +99,32 @@
             UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"signupInputPhone"];
             if(cell == nil){
                 cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 70)];
-                self.phoneTextField = [[BaseTextField alloc] initWithTextFrame:CGRectMake(5,5,SCREEN_WIDTH*5/7-5, 60) placeHolder:@"请输入手机号" keyboard:UIKeyboardTypeNumberPad];
+                self.phoneTextField = [[BaseTextField alloc] initWithTextFrame:CGRectMake(12,3,SCREEN_WIDTH*5/7-12, 50) placeHolder:@"请输入手机号" keyboard:UIKeyboardTypeNumberPad];
                 [self.phoneTextField setDelegate:self];
                 self.phoneTextField.tag = 1;
                 
-                SingleColorBtn *btn = [[SingleColorBtn alloc] initWithFrame:CGRectMake((SCREEN_WIDTH*5/7+5), 5,(SCREEN_WIDTH*2/7-10), 60) textColor:[UIColor whiteColor] bgColor:WY_GREEN text:@"获取验证码"];
-                [btn.titleLabel setFont:[UIFont boldSystemFontOfSize:14]];
-                
+                self.sendVerificationCodeBtn = [[SingleColorBtn alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*5/7, 0,(SCREEN_WIDTH*2/7), 56) textColor:[UIColor whiteColor] bgColor:WY_GREEN text:@"获取验证码" font:[UIFont boldSystemFontOfSize:13] radius:0];
+                self.sendVerificationCodeBtn.titleLabel.lineBreakMode = UILineBreakModeCharacterWrap;
+                [self.sendVerificationCodeBtn addTarget:self action:@selector(sendVerificationCode) forControlEvents:UIControlEventTouchUpInside];
                 [cell.contentView addSubview:self.phoneTextField];
-                [cell.contentView addSubview:btn];
+                [cell.contentView addSubview:self.sendVerificationCodeBtn];
             }
             return cell;
         }else if (indexPath.row == 1){
             UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"signupVeriCodeCell"];
             if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 70)];
-                self.veriCodeTextField = [[BaseTextField alloc] initWithTextFrame:CGRectMake(5,5,SCREEN_WIDTH-10,60) placeHolder:@"输入短信验证码" keyboard:UIKeyboardTypeNumberPad];
+                cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 56)];
+                self.veriCodeTextField = [[BaseTextField alloc] initWithTextFrame:CGRectMake(12,3,SCREEN_WIDTH-24,50) placeHolder:@"输入短信验证码" keyboard:UIKeyboardTypeNumberPad];
                 self.veriCodeTextField.tag = 2;
+                [self.veriCodeTextField setDelegate:self];
                 [cell.contentView addSubview:self.veriCodeTextField];
             }
             return cell;
         }else if(indexPath.row == 2){
             UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"signupInputPassword"];
             if(cell == nil){
-                cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 70)];
-                self.passTextField = [[BaseTextField alloc] initWithTextFrame:CGRectMake(5,5,SCREEN_WIDTH-10,60) placeHolder:@"设置帐户密码" keyboard:UIKeyboardTypeASCIICapable];
+                cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 56)];
+                self.passTextField = [[BaseTextField alloc] initWithTextFrame:CGRectMake(12,3,SCREEN_WIDTH-24,50) placeHolder:@"设置帐户密码" keyboard:UIKeyboardTypeASCIICapable];
                 self.passTextField.secureTextEntry= YES;
                 self.passTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
                 self.passTextField.returnKeyType = UIReturnKeyDone;
@@ -128,11 +136,23 @@
         }else if(indexPath.row == 3){
             UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"sugnupGreyCell"];
             [cell setBackgroundColor:WY_GREY];
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:WY_CGRectMake(5, 20, 219, 26)];
-            [imageView setImage:[UIImage imageNamed:@"provision"]];
-            [cell.contentView addSubview:imageView];
+            self.checkBox = [[UIButton alloc] initWithFrame:CGRectMake(12, 12, 22, 22)];
+            [self.checkBox setImage:[UIImage imageNamed:@"icon_checkbox_a"] forState:UIControlStateNormal];
+            [self.checkBox addTarget:self action:@selector(checkOrUnCheckCheckBox) forControlEvents:UIControlEventTouchUpInside];
+            [cell.contentView addSubview:self.checkBox];
+            //label
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(44, 15, 100, 16)];
+            [label setFont:[UIFont systemFontOfSize:12]];
+            [label setTextColor:WY_BLACK];
+            [label setText:@"我已经阅读并同意"];
+            UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(145, 15, 115, 16)];
+            [label1 setFont:[UIFont systemFontOfSize:12]];
+            [label1 setTextColor:WY_GREEN];
+            [label1 setText:@"使用条款和隐私政策"];
+            [cell.contentView addSubview:label];
+            [cell.contentView addSubview:label1];
             
-            self.errorMsg = [[ErrorMsgLabel alloc] initWithFrame:CGRectMake(5, 35, SCREEN_WIDTH-16, 30) message:@""];
+            self.errorMsg = [[ErrorMsgLabel alloc] initWithFrame:CGRectMake(12, 35, SCREEN_WIDTH-16, 30) message:@""];
             [cell.contentView addSubview:self.errorMsg];
             return cell;
         }else{
@@ -161,6 +181,21 @@
     return sigBtn;
 }
 
+#pragma 发送验证码
+-(void)sendVerificationCode{
+    if (self._countDownNum > 0) {
+        return;
+    }
+   /**发送验证码**/
+    
+    if (self.countDowntimer) {
+        [self.countDowntimer invalidate];
+    }
+    self._countDownNum = 10;
+    //[self toCountDometimer];
+    self.countDowntimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(toCountDometimer) userInfo:nil repeats:YES];
+}
+
 #pragma 提交
 -(void)submitSignup{
     if([self isInputCorrect]){
@@ -175,12 +210,15 @@
 }
 
 
+
 #pragma TextField delegates
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     NSMutableString *text = [textField.text mutableCopy];
     [text replaceCharactersInRange:range withString:string];
     if (textField.tag == 1) {
         return [text length] < 12;
+    }else if(textField.tag == 2){
+        return [text length] < 6;
     }else{
         return [text length] <= 20;
     }
@@ -198,7 +236,7 @@
 
 
 -(BOOL)isInputCorrect{
-    if([[self.phoneTextField.text copy] length] != 11 || [[self.passTextField.text copy] length] <6 || [[self.passTextField.text copy] length] >20){
+    if([[self.phoneTextField.text copy] length] != 11 || [[self.passTextField.text copy] length] <6 || [[self.passTextField.text copy] length] >20 || [[self.veriCodeTextField.text copy] length] != 5){
         return NO;
     }else{
         return YES;
@@ -206,13 +244,42 @@
 }
 
 -(void)showErrors{
+    [_errorMsg setTextColor:[UIColor redColor]];
     if([[self.phoneTextField.text copy] length] != 11){
         //手机号码输入不完整
         [_errorMsg setMsg:@"手机号码输入不正确"];
     }else if([[self.passTextField.text copy] length] < 6 || [[self.passTextField.text copy] length] > 20){
         [_errorMsg setMsg:@"密码长度在6到20位之间"];
+    }else if([[self.veriCodeTextField.text copy] length] != 5){
+        [_errorMsg setMsg:@"验证码输入不正确"];
     }
 }
-
-
+-(void)toCountDometimer{
+    if (self._countDownNum >= 0) {
+        NSString *msg = [NSString stringWithFormat:@"%i秒后重新获取",self._countDownNum];
+        
+        [self.sendVerificationCodeBtn setTitle:msg forState:UIControlStateNormal];
+        [self.sendVerificationCodeBtn setBackgroundColor:RGB(200, 200, 200)];
+        self.sendVerificationCodeBtn.contentEdgeInsets = UIEdgeInsetsMake(0,15, 0, 15);
+    }else{
+        [self.sendVerificationCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+        [self.sendVerificationCodeBtn setBackgroundColor:WY_GREEN];
+        [self.countDowntimer invalidate];
+        self.sendVerificationCodeBtn.contentEdgeInsets = UIEdgeInsetsMake(0,0,0,0);
+    }
+    self._countDownNum--;
+}
+-(void)failedSendVeriCode{
+    [_errorMsg setTextColor:[UIColor redColor]];
+    [_errorMsg setMsg:@"验证码发送失败，请重试！"];
+}
+-(void)checkOrUnCheckCheckBox{
+    if (self.isCheck) {
+        self.isCheck = NO;
+        [self.checkBox setImage:[UIImage imageNamed:@"icon_checkbox_i"] forState:UIControlStateNormal];
+    }else{
+        self.isCheck = YES;
+        [self.checkBox setImage:[UIImage imageNamed:@"icon_checkbox_a"] forState:UIControlStateNormal];
+    }
+}
 @end
