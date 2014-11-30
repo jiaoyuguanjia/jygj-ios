@@ -22,7 +22,7 @@
 }
 
 -(void)setTitleBarColorGreyWithLeftBtn:(Boolean) hasLeftBtn{
-    self.navigationController.navigationBar.barTintColor = COLOR_GREY(246);
+    self.navigationController.navigationBar.barTintColor = WY_GREY;
     NSDictionary *dic = @{NSForegroundColorAttributeName:[UIColor blackColor]};
     self.navigationController.navigationBar.titleTextAttributes = dic;
     if(hasLeftBtn){

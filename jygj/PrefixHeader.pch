@@ -19,6 +19,7 @@
 
 #define WY_GREEN RGB(0, 186, 88)
 #define WY_GREY RGB(246, 246, 239)
+#define WY_ORANGE RGB(255, 145, 64)
 #define WY_GREY_TEXT COLOR_GREY(152)
 #define WY_BLACK RGB(3, 3, 3)
 #define WY_CGRectMake(x, y, width, height) CGRectMake(x/2.0, y/2.0, width/2.0, height/2.0)
