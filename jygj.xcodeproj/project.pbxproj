@@ -25,11 +25,13 @@
 		E2A9C3301A26269A00B8F222 /* StuHelpTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9C32D1A26269A00B8F222 /* StuHelpTableVC.m */; };
 		E2A9C3311A26269A00B8F222 /* StuMineTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9C32F1A26269A00B8F222 /* StuMineTableVC.m */; };
 		E2A9C3341A2626A800B8F222 /* HomePageTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9C3331A2626A800B8F222 /* HomePageTableVC.m */; };
-		F430EAD01A2AF0A80069836C /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = F430EACF1A2AF0A80069836C /* Classes */; };
 		F430EAD21A2AF1890069836C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F430EAD11A2AF1890069836C /* CFNetwork.framework */; };
 		F430EAD41A2AF1B70069836C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F430EAD31A2AF1B70069836C /* SystemConfiguration.framework */; };
 		F430EAD61A2AF1C30069836C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F430EAD51A2AF1C30069836C /* MobileCoreServices.framework */; };
 		F430EAD81A2AF1D80069836C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F430EAD71A2AF1D80069836C /* CoreGraphics.framework */; };
+		F430EB5A1A2B0F7B0069836C /* GRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F430EB591A2B0F7B0069836C /* GRAlertView.m */; };
+		F430EB5C1A2B0F980069836C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F430EB5B1A2B0F980069836C /* QuartzCore.framework */; };
+		F430EB5E1A2B0FCB0069836C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F430EB5D1A2B0FCB0069836C /* UIKit.framework */; };
 		F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F43EBA8E1A209530003706BB /* BaseTableVC.m */; };
 /* End PBXBuildFile section */
 
@@ -82,11 +84,14 @@
 		E2A9C32F1A26269A00B8F222 /* StuMineTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StuMineTableVC.m; sourceTree = "<group>"; };
 		E2A9C3321A2626A800B8F222 /* HomePageTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTableVC.h; sourceTree = "<group>"; };
 		E2A9C3331A2626A800B8F222 /* HomePageTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTableVC.m; sourceTree = "<group>"; };
-		F430EACF1A2AF0A80069836C /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		F430EAD11A2AF1890069836C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F430EAD31A2AF1B70069836C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F430EAD51A2AF1C30069836C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F430EAD71A2AF1D80069836C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F430EB581A2B0F7B0069836C /* GRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRAlertView.h; sourceTree = "<group>"; };
+		F430EB591A2B0F7B0069836C /* GRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAlertView.m; sourceTree = "<group>"; };
+		F430EB5B1A2B0F980069836C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F430EB5D1A2B0FCB0069836C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F43EBA8D1A209530003706BB /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		F43EBA8E1A209530003706BB /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F430EB5E1A2B0FCB0069836C /* UIKit.framework in Frameworks */,
+				F430EB5C1A2B0F980069836C /* QuartzCore.framework in Frameworks */,
 				F430EAD81A2AF1D80069836C /* CoreGraphics.framework in Frameworks */,
 				F430EAD61A2AF1C30069836C /* MobileCoreServices.framework in Frameworks */,
 				F430EAD41A2AF1B70069836C /* SystemConfiguration.framework in Frameworks */,
@@ -125,7 +132,8 @@
 		E21F004A1A176838006E9650 = {
 			isa = PBXGroup;
 			children = (
-				F430EACF1A2AF0A80069836C /* Classes */,
+				F430EB5D1A2B0FCB0069836C /* UIKit.framework */,
+				F430EB5B1A2B0F980069836C /* QuartzCore.framework */,
 				F430EAD71A2AF1D80069836C /* CoreGraphics.framework */,
 				F430EAD51A2AF1C30069836C /* MobileCoreServices.framework */,
 				F430EAD31A2AF1B70069836C /* SystemConfiguration.framework */,
@@ -233,6 +241,7 @@
 		E24412571A18CD9B00FA50AE /* base */ = {
 			isa = PBXGroup;
 			children = (
+				F430EB571A2B0F7B0069836C /* alert */,
 				E21940131A220BBD00ED3B90 /* textField */,
 				E24412631A18CF3700FA50AE /* btn */,
 				E244125F1A18CEAE00FA50AE /* label */,
@@ -299,6 +308,16 @@
 			children = (
 			);
 			path = teacher;
+			sourceTree = "<group>";
+		};
+		F430EB571A2B0F7B0069836C /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				F430EB581A2B0F7B0069836C /* GRAlertView.h */,
+				F430EB591A2B0F7B0069836C /* GRAlertView.m */,
+			);
+			name = alert;
+			path = ../alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21F00641A176838006E9650 /* Images.xcassets in Resources */,
-				F430EAD01A2AF0A80069836C /* Classes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +430,7 @@
 				E29169621A20780100C30CCA /* BaseView.m in Sources */,
 				E219400C1A21C8DD00ED3B90 /* UIViewController+Ext.m in Sources */,
 				F43EBA8F1A209530003706BB /* BaseTableVC.m in Sources */,
+				F430EB5A1A2B0F7B0069836C /* GRAlertView.m in Sources */,
 				E2A9C3341A2626A800B8F222 /* HomePageTableVC.m in Sources */,
 				E21940191A221BAB00ED3B90 /* ErrorMsgLabel.m in Sources */,
 				E21940001A218A0000ED3B90 /* LoginTableVC.m in Sources */,
