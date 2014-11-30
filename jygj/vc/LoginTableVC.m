@@ -153,25 +153,32 @@
         NSMutableArray *controllers = [[NSMutableArray alloc] init];
         
         HomePageTableVC *home = [[HomePageTableVC alloc] init];
-        [controllers addObject:home];
-        [home setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"btn_home_i"] selectedImage:[UIImage imageNamed:@"btn_home_a"]]];
+//        [controllers addObject:home];
+        [home setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"首页" image:[UIImage imageNamed:@"btn_home_i"] selectedImage:[UIImage imageNamed:@"btn_home_a"]]];
+        UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:home];
+        [controllers addObject:homeNav];
         
         
         StuHelpTableVC *help = [[StuHelpTableVC alloc] init];
-        [controllers addObject:help];
+//        [controllers addObject:help];
         [help setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"帮我找" image:[UIImage imageNamed:@"btn_help_i"] selectedImage:[UIImage imageNamed:@"btn_help_a"]]];
+        UINavigationController *helpNav = [[UINavigationController alloc] initWithRootViewController:help];
+        [controllers addObject:helpNav];
        
         
         StuMineTableVC *mine = [[StuMineTableVC alloc] init];
-        [controllers addObject:mine];
+//        [controllers addObject:mine];
          [mine setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"btn_mine_i"] selectedImage:[UIImage imageNamed:@"btn_mine_a"]]];
+        UINavigationController *mineNav = [[UINavigationController alloc] initWithRootViewController:mine];
+        [controllers addObject:mineNav];
         
         UITabBarController *mainTab = [[UITabBarController alloc] init];
         [mainTab setViewControllers:controllers animated:YES];
         [mainTab.tabBar setBackgroundColor:WY_GREY];
-
+        [mainTab.tabBar setTintColor:WY_GREEN];
         
         [self.navigationController pushViewController:mainTab animated:YES];
+        self.navigationController.navigationBarHidden = YES;
         
     }else{
         [self showErrors];
@@ -181,13 +188,14 @@
 
 #pragma TextField delegates
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    NSMutableString *text = [textField.text mutableCopy];
-    [text replaceCharactersInRange:range withString:string];
-    if (textField.tag == 1) {
-        return [text length] < 12;
-    }else{
-        return [text length] <= 20;
-    }
+//    NSMutableString *text = [textField.text mutableCopy];
+//    [text replaceCharactersInRange:range withString:string];
+//    if (textField.tag == 1) {
+//        return [text length] < 12;
+//    }else{
+//        return [text length] <= 20;
+//    }
+    return YES;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -199,11 +207,12 @@
 
 
 -(BOOL)isInputCorrect{
-    if([[self.phoneTextField.text copy] length] != 11 || [[self.passTextField.text copy] length] <6 || [[self.passTextField.text copy] length] >20){
-        return NO;
-    }else{
-        return YES;
-    }
+//    if([[self.phoneTextField.text copy] length] != 11 || [[self.passTextField.text copy] length] <6 || [[self.passTextField.text copy] length] >20){
+//        return NO;
+//    }else{
+//        return YES;
+//    }
+    return YES;
 }
 
 -(void)showErrors{
