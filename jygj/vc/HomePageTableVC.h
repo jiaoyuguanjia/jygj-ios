@@ -7,7 +7,10 @@
 //
 
 #import "BaseTableVC.h"
+#import "TeacherSearchLogic.h"
 
 @interface HomePageTableVC : BaseTableVC
+
+@property(nonatomic,strong) TeacherSearchLogic *logic;
 
 @end

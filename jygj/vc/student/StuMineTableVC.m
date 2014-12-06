@@ -9,6 +9,7 @@
 #import "StuMineTableVC.h"
 #import "SingleColorBtn.h"
 #import "EntranceVC.h"
+#import "HomePageTableVC.h"
 
 @interface StuMineTableVC ()
 
@@ -124,7 +125,12 @@
 
 -(void)logout{
     NSLog(@"logout");
-    [self.navigationController popToRootViewControllerAnimated:NO];
+    
+    UINavigationController *controller = [self.tabBarController.viewControllers objectAtIndex:0];
+    if(controller != nil){
+        [controller popToRootViewControllerAnimated:YES];
+    }
+   
 }
 
 

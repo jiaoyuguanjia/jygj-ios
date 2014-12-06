@@ -11,20 +11,23 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Properties.h"
+#import "UIColor+Hex.h"
+
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define COLOR_GREY(value) RGB(value,value,value)
 #define FULL_SCREEN [UIScreen mainScreen].bounds
 #define SCREEN_WIDTH  FULL_SCREEN.size.width
 #define SCREEN_HEIGHT  FULL_SCREEN.size.height
 
-#define WY_GREEN RGB(0, 186, 88)
-#define WY_GREY RGB(246, 246, 239)
-#define WY_ORANGE RGB(255, 145, 64)
-#define WY_GREY_TEXT COLOR_GREY(152)
+#define WY_GREEN RGB(0, 187, 70)
+#define WY_GREY RGB(244, 244, 244)
+#define WY_GREY_LINE COLOR_GREY(230)
+#define WY_ORANGE RGB(255, 147, 38)
+#define WY_GREY_TEXT COLOR_GREY(140)
 #define WY_BLACK RGB(3, 3, 3)
 #define WY_CGRectMake(x, y, width, height) CGRectMake(x/2.0, y/2.0, width/2.0, height/2.0)
-#define WY_3X_CGRectMake(x, y, width, height) CGRectMake(x/3.0, y/3.0, width/3.0, height/3.0)
 
-#import "UIView+Properties.h"
 
 #endif

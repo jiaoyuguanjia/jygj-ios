@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+Ext.h"
+#import "UITableViewCell+Ext.h"
 
 @interface BaseTableVC : UITableViewController<UITableViewDataSource,UITableViewDelegate>
+
+
 
 @end
